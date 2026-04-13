@@ -209,7 +209,7 @@ class MainView extends BaseView {
                 // Сохраняем активную вкладку в хранилище
                 this.store.setActiveTab(tabId);
 
-                // На главной странице кнопка "ВремяГид" (algorithm) ничего не делает
+                // На главной странице кнопка "Magyar Gid" (algorithm) ничего не делает
                 // Для остальных табов открываем соответствующую карусель
                 if (tabId !== 'algorithm') {
                     const carouselTabMapping = {

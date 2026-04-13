@@ -15,7 +15,7 @@ class Router {
         // Определение контекста (GitHub Pages или кастомный домен)
         this.isGitHubPages = window.location.hostname.includes('github.io');
         if (this.isGitHubPages && this.basePath === '/') {
-            this.basePath = '/english_grammar_guide/';
+            this.basePath = '/magyargid/';
         }
 
         // Обработка изменения хэша вместо popstate для хэш-навигации

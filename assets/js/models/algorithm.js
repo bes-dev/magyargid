@@ -1,5 +1,5 @@
 /**
- * AlgorithmModel - модель для работы с алгоритмами ВремяГид
+ * AlgorithmModel - модель для работы с алгоритмами Magyar Gid
  */
 class AlgorithmModel {
     constructor(algorithmId) {
@@ -15,7 +15,7 @@ class AlgorithmModel {
         // Определение контекста (GitHub Pages или кастомный домен)
         this.isGitHubPages = window.location.hostname.includes('github.io');
         if (this.isGitHubPages && this.basePath === '/') {
-            this.basePath = '/hungarian_grammar_guide/';
+            this.basePath = '/magyargid/';
         }
     }
 

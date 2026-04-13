@@ -8,21 +8,7 @@ class ResultView extends BaseView {
     constructor() {
         super('result-container');
         this.eventBus = EventBus.getInstance();
-        this.tenseMapping = {
-            'Present Simple': 'present-simple',
-            'Present Continuous': 'present-continuous',
-            'Present Perfect': 'present-perfect',
-            'Present Perfect Continuous': 'present-perfect-continuous',
-            'Past Simple': 'past-simple',
-            'Past Continuous': 'past-continuous',
-            'Past Perfect': 'past-perfect',
-            'Past Perfect Continuous': 'past-perfect-continuous',
-            'Future Simple': 'future-simple',
-            'Future Continuous': 'future-continuous',
-            'Future Perfect': 'future-perfect',
-            'Future Perfect Continuous': 'future-perfect-continuous',
-            'be going to': 'be-going-to'
-        };
+        this.tenseMapping = {};
     }
     
     /**
@@ -56,7 +42,7 @@ class ResultView extends BaseView {
         if (!data || !data.result) {
             return `
                 <header>
-                    <div class="logo-small" id="result-logo">ВремяГид</div>
+                    <div class="logo-small" id="result-logo">Magyar Gid</div>
                 </header>
                 <div class="card fade-in">
                     <div class="result-header">
@@ -75,7 +61,7 @@ class ResultView extends BaseView {
 
         return `
             <header>
-                <div class="logo-small" id="result-logo">ВремяГид</div>
+                <div class="logo-small" id="result-logo">Magyar Gid</div>
             </header>
 
             <div class="card fade-in">
@@ -113,13 +99,10 @@ class ResultView extends BaseView {
                     <button class="action-btn secondary-btn restart-btn">Начать заново</button>
                     <button class="action-btn primary-btn home-btn">На главную</button>
                 </div>
-                <div class="action-buttons" style="margin-top: 15px;">
-                    <button class="action-btn secondary-btn practice-btn">Практиковать это время</button>
-                </div>
             </div>
 
             <div class="footer">
-                © 2025 ВремяГид | Результат: ${result.title}
+                Magyar Gid | ${result.title}
             </div>
         `;
     }
@@ -200,7 +183,7 @@ class ResultView extends BaseView {
 
         return `
             <div class="card fade-in delay-2">
-                <div class="section-title">Сравнение с другими способами выражения будущего</div>
+                <div class="section-title">Сравнение</div>
                 ${comparison.map(item => `
                     <div class="example-box">
                         <div class="example-title">${item.title}</div>
@@ -241,17 +224,6 @@ class ResultView extends BaseView {
             });
         }
         
-        // Обработчик для кнопки "Практиковать это время"
-        const practiceButton = this.element.querySelector('.practice-btn');
-        if (practiceButton) {
-            practiceButton.addEventListener('click', () => {
-                // Получаем данные о времени из URL
-                const tenseParam = this.getTenseFromResult();
-                
-                // Перенаправляем на страницу практики с выбранным временем
-                window.location.href = `/practice.html?tenses=${tenseParam}`;
-            });
-        }
     }
 }
 

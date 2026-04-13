@@ -21,20 +21,20 @@ class CarouselView extends BaseView {
     processTemplate() {
         return `
             <div class="carousel-tab" data-tab="algorithm">
-                <div class="carousel-icon">🧠</div>
-                <div class="carousel-label">ВремяГид</div>
+                <div class="carousel-icon">🇭🇺</div>
+                <div class="carousel-label">Алгоритм</div>
             </div>
             <div class="carousel-tab" data-tab="tenses">
-                <div class="carousel-icon">⏰</div>
-                <div class="carousel-label">Времена</div>
+                <div class="carousel-icon">🏃</div>
+                <div class="carousel-label">Глаголы</div>
             </div>
             <div class="carousel-tab" data-tab="voices">
-                <div class="carousel-icon">📢</div>
-                <div class="carousel-label">Залоги</div>
+                <div class="carousel-icon">📦</div>
+                <div class="carousel-label">Существительные</div>
             </div>
             <div class="carousel-tab" data-tab="conditionals">
-                <div class="carousel-icon">🔀</div>
-                <div class="carousel-label">Условные предложения</div>
+                <div class="carousel-icon">🔤</div>
+                <div class="carousel-label">Гармония гласных</div>
             </div>
         `;
     }

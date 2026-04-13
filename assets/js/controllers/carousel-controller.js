@@ -37,7 +37,7 @@ class CarouselController {
         if (params.tab) {
             this.activeTab = params.tab;
         } else {
-            // По умолчанию - "ВремяГид"
+            // По умолчанию - "Magyar Gid"
             this.activeTab = 'algorithm';
         }
         

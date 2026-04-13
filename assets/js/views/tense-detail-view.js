@@ -38,7 +38,7 @@ class TenseDetailView extends BaseView {
         if (!tenseData) {
             return `
                 <header>
-                    <div class="logo-small" id="detail-logo">ВремяГид</div>
+                    <div class="logo-small" id="detail-logo">Magyar Gid</div>
                 </header>
                 <div class="card fade-in">
                     <div class="result-header">
@@ -57,7 +57,7 @@ class TenseDetailView extends BaseView {
 
         return `
             <header>
-                <div class="logo-small" id="detail-logo">ВремяГид</div>
+                <div class="logo-small" id="detail-logo">Magyar Gid</div>
             </header>
 
             <div class="card fade-in">
@@ -98,7 +98,7 @@ class TenseDetailView extends BaseView {
             </div>
 
             <div class="footer">
-                © 2025 ВремяГид | ${tenseData.title}
+                Magyar Gid | ${tenseData.title}
             </div>
         `;
     }
@@ -179,7 +179,7 @@ class TenseDetailView extends BaseView {
 
         return `
             <div class="card fade-in delay-2">
-                <div class="section-title">Сравнение с другими временами</div>
+                <div class="section-title">Сравнение</div>
                 ${comparison.map(item => `
                     <div class="example-box">
                         <div class="example-title">${item.title}</div>

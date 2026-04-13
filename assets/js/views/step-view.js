@@ -22,7 +22,7 @@ class StepView extends BaseView {
 
         return `
             <header>
-                <div class="logo-small" id="step-logo">ВремяГид</div>
+                <div class="logo-small" id="step-logo">Magyar Gid</div>
             </header>
 
             <div class="card fade-in" data-step-id="${data.steps[data.currentStepIndex]?.id || ''}" data-skipped-steps='${skippedStepsJson}'>
@@ -57,7 +57,7 @@ class StepView extends BaseView {
             </div>
 
             <div class="footer">
-                © 2025 ВремяГид | Шаг ${this.getFixedStepNumber(data.currentStepIndex)} из 5: ${data.stepLabel}
+                Magyar Gid | Шаг ${this.getFixedStepNumber(data.currentStepIndex)}: ${data.stepLabel}
             </div>
         `;
     }
@@ -72,10 +72,9 @@ class StepView extends BaseView {
         // Определяем 6 фиксированных шагов в соответствии с дизайном
         const fixedSteps = [
             { label: "Начало", id: "start" },
-            { label: "Фокус", id: "step1" },
-            { label: "Время", id: "step2" },
-            { label: "Характер", id: "step3" },
-            { label: "Форма", id: "step4_form" },
+            { label: "Часть речи", id: "step1" },
+            { label: "Действие", id: "step2" },
+            { label: "Тип", id: "step3" },
             { label: "Результат", id: "result" }
         ];
         
