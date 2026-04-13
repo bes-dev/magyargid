@@ -19,7 +19,8 @@ class VoicesView extends BaseView {
                     <div class="nav-tab">🇭🇺 Алгоритм</div>
                     <div class="nav-tab">🏃 Глаголы</div>
                     <div class="nav-tab active">📦 Существительные</div>
-                    <div class="nav-tab">🔤 Гармония гласных</div>
+                    <div class="nav-tab">🔤 Гармония</div>
+                    <div class="nav-tab">🔢 Числительные</div>
                 </div>
 
                 <div class="card-title">Существительные (Főnevek)</div>
@@ -135,7 +136,7 @@ class VoicesView extends BaseView {
         navTabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 if (index === 0) this.eventBus.emit('navigate:home');
-                else if (index !== 2) { const t = ['algorithm','tenses','voices','conditionals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
+                else if (index !== 2) { const t = ['algorithm','tenses','voices','conditionals','numerals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
             });
         });
         const timePoints = this.element.querySelectorAll('.time-point');

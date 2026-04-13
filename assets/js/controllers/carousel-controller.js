@@ -2,6 +2,7 @@ import CarouselView from '../views/carousel-view.js';
 import TensesView from '../views/tenses-view.js';
 import VoicesView from '../views/voices-view.js';
 import ConditionalsView from '../views/conditionals-view.js';
+import NumeralsView from '../views/numerals-view.js';
 import EventBus from '../utils/event-bus.js';
 import Router from '../router.js';
 
@@ -14,6 +15,7 @@ class CarouselController {
         this.tensesView = new TensesView('tenses-container');
         this.voicesView = new VoicesView('voices-container');
         this.conditionalsView = new ConditionalsView('conditionals-container');
+        this.numeralsView = new NumeralsView('numerals-container');
         
         // Доступ к основным компонентам
         this.eventBus = EventBus.getInstance();
@@ -65,7 +67,8 @@ class CarouselController {
         const containers = [
             document.getElementById('tenses-container'),
             document.getElementById('voices-container'),
-            document.getElementById('conditionals-container')
+            document.getElementById('conditionals-container'),
+            document.getElementById('numerals-container')
         ];
         
         containers.forEach(container => {
@@ -108,8 +111,13 @@ class CarouselController {
                 await this.conditionalsView.render();
                 break;
                 
+            case 'numerals':
+                container = document.getElementById('numerals-container');
+                container.classList.remove('hidden');
+                await this.numeralsView.render();
+                break;
+
             case 'algorithm':
-                // Возвращаемся на главный экран
                 this.eventBus.emit('navigate:home');
                 break;
                 

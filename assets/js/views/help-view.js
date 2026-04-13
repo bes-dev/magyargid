@@ -18,7 +18,8 @@ class HelpView extends BaseView {
                     <div class="nav-tab">🇭🇺 Алгоритм</div>
                     <div class="nav-tab">🏃 Глаголы</div>
                     <div class="nav-tab">📦 Существительные</div>
-                    <div class="nav-tab">🔤 Гармония гласных</div>
+                    <div class="nav-tab">🔤 Гармония</div>
+                    <div class="nav-tab">🔢 Числительные</div>
                 </div>
 
                 <div class="card-title">Справка</div>
@@ -53,7 +54,7 @@ class HelpView extends BaseView {
         navTabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 if (index === 0) this.eventBus.emit('navigate:home');
-                else { const t = ['algorithm','tenses','voices','conditionals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
+                else { const t = ['algorithm','tenses','voices','conditionals','numerals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
             });
         });
     }

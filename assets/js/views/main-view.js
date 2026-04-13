@@ -107,6 +107,26 @@ class MainView extends BaseView {
                     </div>
                 </div>
             `,
+            'numerals': `
+                <div class="tab-content">
+                    <h3>🔢 Числительные</h3>
+                    <p>Венгерские числа от 0 до миллиона:</p>
+                    <div class="conditionals-list">
+                        <div class="conditional-item">
+                            <h4>0–10</h4>
+                            <p>nulla, egy, kettő/két, három, négy, öt, hat, hét, nyolc, kilenc, tíz</p>
+                        </div>
+                        <div class="conditional-item">
+                            <h4>Десятки</h4>
+                            <p>húsz (20), harminc (30), negyven (40), ötven (50), hatvan (60), hetven (70), nyolcvan (80), kilencven (90)</p>
+                        </div>
+                        <div class="conditional-item">
+                            <h4>100+</h4>
+                            <p>száz (100), ezer (1000), millió</p>
+                        </div>
+                    </div>
+                </div>
+            `,
         };
     }
 
@@ -140,7 +160,8 @@ class MainView extends BaseView {
                     <div class="nav-tab ${activeTab === 'algorithm' ? 'active' : ''}" data-tab="algorithm">🇭🇺 Алгоритм</div>
                     <div class="nav-tab ${activeTab === 'tenses' ? 'active' : ''}" data-tab="tenses">🏃 Глаголы</div>
                     <div class="nav-tab ${activeTab === 'passive' ? 'active' : ''}" data-tab="passive">📦 Существительные</div>
-                    <div class="nav-tab ${activeTab === 'conditionals' ? 'active' : ''}" data-tab="conditionals">🔤 Гармония гласных</div>
+                    <div class="nav-tab ${activeTab === 'conditionals' ? 'active' : ''}" data-tab="conditionals">🔤 Гармония</div>
+                    <div class="nav-tab ${activeTab === 'numerals' ? 'active' : ''}" data-tab="numerals">🔢 Числительные</div>
                 </div>
                 <div class="card-description" style="margin-top: 15px;">
                     <p>Выберите раздел для быстрого доступа к справочной информации. Алгоритм проведёт через вопросы, справочники содержат таблицы спряжений и склонений.</p>
@@ -215,7 +236,8 @@ class MainView extends BaseView {
                     const carouselTabMapping = {
                         'tenses': 'tenses',
                         'passive': 'voices',
-                        'conditionals': 'conditionals'
+                        'conditionals': 'conditionals',
+                        'numerals': 'numerals'
                     };
                     this.eventBus.emit('navigate:carousel', { tab: carouselTabMapping[tabId] });
                 }

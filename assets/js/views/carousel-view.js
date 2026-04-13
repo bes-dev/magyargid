@@ -34,7 +34,11 @@ class CarouselView extends BaseView {
             </div>
             <div class="carousel-tab" data-tab="conditionals">
                 <div class="carousel-icon">🔤</div>
-                <div class="carousel-label">Гармония гласных</div>
+                <div class="carousel-label">Гармония</div>
+            </div>
+            <div class="carousel-tab" data-tab="numerals">
+                <div class="carousel-icon">🔢</div>
+                <div class="carousel-label">Числительные</div>
             </div>
         `;
     }

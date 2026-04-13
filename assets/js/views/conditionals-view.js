@@ -18,7 +18,8 @@ class ConditionalsView extends BaseView {
                     <div class="nav-tab">🇭🇺 Алгоритм</div>
                     <div class="nav-tab">🏃 Глаголы</div>
                     <div class="nav-tab">📦 Существительные</div>
-                    <div class="nav-tab active">🔤 Гармония гласных</div>
+                    <div class="nav-tab active">🔤 Гармония</div>
+                    <div class="nav-tab">🔢 Числительные</div>
                 </div>
 
                 <div class="card-title">Гармония гласных (Magánhangzó-harmónia)</div>
@@ -74,20 +75,6 @@ class ConditionalsView extends BaseView {
                     </div>
                 </div>
 
-                <div class="tense-categories fade-in delay-4">
-                    <div class="tense-category">
-                        <div class="category-title"><span class="icon">🔢</span> Числительные (Számok)</div>
-                        <div class="tense-list">
-                            <div class="tense-item"><div class="tense-name">0–10</div><div class="tense-description">nulla (0), egy (1), kettő/két (2), három (3), négy (4), öt (5), hat (6), hét (7), nyolc (8), kilenc (9), tíz (10)</div></div>
-                            <div class="tense-item"><div class="tense-name">11–19: tizen + единица</div><div class="tense-description">tizenegy (11), tizenkettő (12), tizenhárom (13), tizennégy (14), tizenöt (15), tizenhat (16), tizenhét (17), tizennyolc (18), tizenkilenc (19)</div></div>
-                            <div class="tense-item"><div class="tense-name">Десятки</div><div class="tense-description">húsz (20), harminc (30), negyven (40), ötven (50), hatvan (60), hetven (70), nyolcvan (80), kilencven (90)</div></div>
-                            <div class="tense-item"><div class="tense-name">21–29: huszon + единица</div><div class="tense-description">huszonegy (21), huszonkettő (22), huszonhárom (23)... huszonkilenc (29)</div></div>
-                            <div class="tense-item"><div class="tense-name">30+: десяток + единица</div><div class="tense-description">harmincegy (31), harmincöt (35), negyvenegy (41), negyvenkettő (42)...</div></div>
-                            <div class="tense-item"><div class="tense-name">100, 1000+</div><div class="tense-description">száz (100), kétszáz (200), ezer (1000), kétezer (2000), millió (1 000 000)</div></div>
-                            <div class="tense-item"><div class="tense-name">kettő vs két</div><div class="tense-description">kettő — самостоятельно (Hány? — Kettő.), két — перед существительным (két alma = два яблока)</div></div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="footer">
@@ -103,7 +90,7 @@ class ConditionalsView extends BaseView {
         navTabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 if (index === 0) this.eventBus.emit('navigate:home');
-                else if (index !== 3) { const t = ['algorithm','tenses','voices','conditionals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
+                else if (index !== 3) { const t = ['algorithm','tenses','voices','conditionals','numerals']; this.eventBus.emit('carousel:change', { tab: t[index] }); }
             });
         });
     }

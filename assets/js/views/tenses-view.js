@@ -19,7 +19,8 @@ class TensesView extends BaseView {
                     <div class="nav-tab">🇭🇺 Алгоритм</div>
                     <div class="nav-tab active">🏃 Глаголы</div>
                     <div class="nav-tab">📦 Существительные</div>
-                    <div class="nav-tab">🔤 Гармония гласных</div>
+                    <div class="nav-tab">🔤 Гармония</div>
+                    <div class="nav-tab">🔢 Числительные</div>
                 </div>
 
                 <div class="card-title">Венгерские глаголы (Igék)</div>
@@ -195,7 +196,7 @@ class TensesView extends BaseView {
                 if (index === 0) {
                     this.eventBus.emit('navigate:home');
                 } else if (index !== 1) {
-                    const tabNames = ['algorithm', 'tenses', 'voices', 'conditionals'];
+                    const tabNames = ['algorithm', 'tenses', 'voices', 'conditionals', 'numerals'];
                     this.eventBus.emit('carousel:change', { tab: tabNames[index] });
                 }
             });
