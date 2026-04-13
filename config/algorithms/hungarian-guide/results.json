@@ -617,5 +617,168 @@
     "additionalInfo": {
       "important": "van/vannak ОПУСКАЕТСЯ когда предложение отвечает на Какой?/Кто?/Что? → Ő szép. Ő tanár. Но СТАВИТСЯ на другие вопросы → Ő otthon van. Ő nincs itt."
     }
+  },
+  "lenni_identity": {
+    "id": "lenni_identity",
+    "icon": "🪪",
+    "title": "Lenni (быть): кто/какой кто-то",
+    "subtitle": "Я учитель. Она красивая. Они студенты.",
+    "formulas": [
+      { "title": "Én (я)", "formula": "... vagyok", "type": "affirmative" },
+      { "title": "Te (ты)", "formula": "... vagy", "type": "affirmative" },
+      { "title": "Ő/Ön (он/она/Вы)", "formula": "... (без van!)", "type": "affirmative" },
+      { "title": "Mi (мы)", "formula": "... vagyunk", "type": "affirmative" },
+      { "title": "Ti (вы)", "formula": "... vagytok", "type": "affirmative" },
+      { "title": "Ők/Önök (они/Вы мн.)", "formula": "... (без vannak!)", "type": "affirmative" }
+    ],
+    "examples": [
+      { "original": "Én Artur vagyok.", "translation": "Я Артур.", "type": "affirmative" },
+      { "original": "Tanár vagyok.", "translation": "Я учитель. (без én — понятно из vagyok)", "type": "affirmative" },
+      { "original": "Te szép vagy.", "translation": "Ты красивая.", "type": "affirmative" },
+      { "original": "Ő tanár.", "translation": "Он учитель. (БЕЗ van! — отвечает на Кто?)", "type": "affirmative" },
+      { "original": "Ők szépek.", "translation": "Они красивые. (БЕЗ vannak!)", "type": "affirmative" },
+      { "original": "Mi szépek vagyunk.", "translation": "Мы красивые.", "type": "affirmative" },
+      { "original": "Önök nyugdíjasok.", "translation": "Вы пенсионеры. (вежливая форма, без vannak)", "type": "affirmative" }
+    ],
+    "usage": [
+      "Структура: подлежащее + свойство/профессия + форма lenni",
+      "В 3-м лице van/vannak ОПУСКАЕТСЯ, если ответ на Кто?/Какой?/Что?",
+      "Местоимение можно опускать — форма глагола уже указывает лицо",
+      "Артикль a/az: a — перед согласными, az — перед гласными"
+    ],
+    "markers": [
+      "a (перед согласной) / az (перед гласной) — определённый артикль",
+      "egy — неопределённый артикль (один, какой-то)"
+    ],
+    "additionalInfo": {
+      "important": "Ключевое правило: если в 3-м лице предложение отвечает на Кто? Какой? Что? → van/vannak НЕ ставится. Ő szép. Ő tanár. Ők diákok. Но если на Где? Как? → van НУЖЕН: Ő otthon van.",
+      "examples": [
+        { "correct": true, "text": "Ő szép. = Она красивая. (без van — ответ на «какая?»)" },
+        { "correct": false, "text": "Ő szép van.", "correction": "Ő szép. (van не нужен!)" },
+        { "correct": true, "text": "Ő otthon van. = Он дома. (van нужен — ответ на «где?»)" }
+      ]
+    },
+    "comparison": [
+      { "title": "Отрицание", "first": "Ő szép. → Ő nem szép. (просто nem)", "second": "Ő itt van. → Ő nincs itt. (nem+van=nincs)" }
+    ]
+  },
+  "lenni_existence": {
+    "id": "lenni_existence",
+    "icon": "📍",
+    "title": "Lenni (быть): наличие и местонахождение",
+    "subtitle": "Он дома. Книга на столе. Её здесь нет.",
+    "formulas": [
+      { "title": "Én (я)", "formula": "(место) + vagyok", "type": "affirmative" },
+      { "title": "Te (ты)", "formula": "(место) + vagy", "type": "affirmative" },
+      { "title": "Ő/Ön (он/она/Вы)", "formula": "(место) + van", "type": "affirmative" },
+      { "title": "Mi (мы)", "formula": "(место) + vagyunk", "type": "affirmative" },
+      { "title": "Ti (вы)", "formula": "(место) + vagytok", "type": "affirmative" },
+      { "title": "Ők/Önök (они/Вы мн.)", "formula": "(место) + vannak", "type": "affirmative" },
+      { "title": "Отрицание ед.ч.", "formula": "nincs (= nem + van)", "type": "question" },
+      { "title": "Отрицание мн.ч.", "formula": "nincsenek (= nem + vannak)", "type": "question" }
+    ],
+    "examples": [
+      { "original": "Itthon vagyok.", "translation": "Я дома. (itthon — я сам тут)", "type": "affirmative" },
+      { "original": "Ő otthon van.", "translation": "Он дома. (otthon — он там, а я нет)", "type": "affirmative" },
+      { "original": "A könyv az asztalon van.", "translation": "Книга на столе.", "type": "affirmative" },
+      { "original": "Ők otthon vannak.", "translation": "Они дома.", "type": "affirmative" },
+      { "original": "Ő nincs itt.", "translation": "Его здесь нет.", "type": "question" },
+      { "original": "Ők nincsenek itt.", "translation": "Их здесь нет.", "type": "question" },
+      { "original": "Ön nincs itt.", "translation": "Вас здесь нет. (вежливая форма)", "type": "question" }
+    ],
+    "usage": [
+      "Здесь van/vannak НУЖЕН — это ответ на Где? (Hol?)",
+      "itthon = дома (когда сам находишься дома)",
+      "otthon = дома (когда говоришь о другом месте)",
+      "Отрицание: nem + van сливаются в nincs, nem + vannak → nincsenek"
+    ],
+    "markers": [
+      "itt (тут), ott (там), sehol (нигде), mindenhol (везде), valahol (где-то)"
+    ],
+    "additionalInfo": {
+      "important": "Itthon vs Otthon: Itthon vagyok (Я дома — и говорю из дома). Otthon van (Он дома — а я не дома). Это разные слова!",
+      "examples": [
+        { "correct": true, "text": "Ő otthon van. = Он дома. (van нужен!)" },
+        { "correct": false, "text": "Ő otthon.", "correction": "Ő otthon van. (van обязателен — ответ на «где?»)" }
+      ]
+    }
+  },
+  "conjunctions": {
+    "id": "conjunctions",
+    "icon": "🔗",
+    "title": "Союзы (Kötőszók)",
+    "subtitle": "Как соединять слова и предложения",
+    "formulas": [
+      { "title": "и", "formula": "és (основной) / meg (разговорный)", "type": "affirmative" },
+      { "title": "тоже, также", "formula": "is (ставится ПОСЛЕ слова)", "type": "affirmative" },
+      { "title": "и... и...", "formula": "is... is...", "type": "affirmative" },
+      { "title": "а (противопоставление)", "formula": "pedig (ПОСЛЕ слова, к которому относится)", "type": "affirmative" },
+      { "title": "хотя, а ведь", "formula": "pedig (в начале второй части)", "type": "affirmative" },
+      { "title": "но", "formula": "de", "type": "affirmative" },
+      { "title": "не... а...", "formula": "nem..., hanem...", "type": "question" },
+      { "title": "не только... но и...", "formula": "nemcsak..., hanem... is", "type": "question" },
+      { "title": "если", "formula": "ha", "type": "question" }
+    ],
+    "examples": [
+      { "original": "Gabor és Anna.", "translation": "Габор и Анна.", "type": "affirmative" },
+      { "original": "Gabor is ott volt.", "translation": "Габор тоже был там.", "type": "affirmative" },
+      { "original": "Ez füzet, az pedig könyv.", "translation": "Это тетрадь, а то книга.", "type": "affirmative" },
+      { "original": "Ő nem jön, pedig régen várunk.", "translation": "Он не идёт, хотя мы давно ждём.", "type": "affirmative" },
+      { "original": "János sportol, de nem jár edzőterembe.", "translation": "Янош занимается спортом, но не ходит в зал.", "type": "affirmative" },
+      { "original": "Ma nem péntek van, hanem csütörtök.", "translation": "Сегодня не пятница, а четверг.", "type": "question" },
+      { "original": "Nemcsak te játszol gitáron, hanem Anna is.", "translation": "Не только ты играешь на гитаре, но и Анна.", "type": "question" },
+      { "original": "Ha fáradt vagy, pihenj egy kicsit.", "translation": "Если устал, отдохни немного.", "type": "question" }
+    ],
+    "usage": [
+      "és/meg — соединяют однородные: Gabor és Anna, ír és olvas",
+      "is — ставится ПОСЛЕ слова: Gabor is (и Габор тоже)",
+      "pedig — ПОСЛЕ слова при противопоставлении, НО В НАЧАЛЕ при уступке",
+      "nem...hanem — не X, а Y (исправление ошибочного утверждения)",
+      "ha — условие, аналог русского «если»"
+    ],
+    "markers": [
+      "és = и | is = тоже | de = но | ha = если",
+      "pedig = а / хотя | hanem = а (после отрицания)"
+    ]
+  },
+  "postpositions": {
+    "id": "postpositions",
+    "icon": "📐",
+    "title": "Послелоги (Névutók)",
+    "subtitle": "Под, над, перед, за, между, вокруг — отдельные слова ПОСЛЕ существительного",
+    "formulas": [
+      { "title": "под", "formula": "существительное + alatt", "type": "affirmative" },
+      { "title": "над", "formula": "существительное + fölött (felett)", "type": "affirmative" },
+      { "title": "возле, около", "formula": "существительное + mellett", "type": "affirmative" },
+      { "title": "перед", "formula": "существительное + előtt", "type": "affirmative" },
+      { "title": "за, сзади", "formula": "существительное + mögött", "type": "affirmative" },
+      { "title": "между, среди", "formula": "существительное + között", "type": "affirmative" },
+      { "title": "вокруг", "formula": "существительное + körül", "type": "affirmative" }
+    ],
+    "examples": [
+      { "original": "A kutya a fa alatt van.", "translation": "Собака под деревом.", "type": "affirmative" },
+      { "original": "Az óra a divány fölött van.", "translation": "Часы над диваном.", "type": "affirmative" },
+      { "original": "A kutya az ágy mellett van.", "translation": "Собака возле кровати.", "type": "affirmative" },
+      { "original": "Az autó a ház előtt áll.", "translation": "Машина стоит перед домом.", "type": "affirmative" },
+      { "original": "Az autó a fa mögött van.", "translation": "Машина за деревом.", "type": "affirmative" },
+      { "original": "Az ablak és a polc között.", "translation": "Между окном и полкой.", "type": "affirmative" },
+      { "original": "Az emberek az asztal körül ülnek.", "translation": "Люди сидят вокруг стола.", "type": "affirmative" }
+    ],
+    "usage": [
+      "Послелоги — отдельные слова, ставятся ПОСЛЕ существительного",
+      "В отличие от русского, где предлоги ПЕРЕД словом (под столом), в венгерском — ПОСЛЕ (az asztal alatt)",
+      "Существительное остаётся в именительном падеже — БЕЗ суффиксов!"
+    ],
+    "markers": [
+      "alatt (под), fölött (над), mellett (возле)",
+      "előtt (перед), mögött (за), között (между), körül (вокруг)"
+    ],
+    "additionalInfo": {
+      "important": "Главное отличие от русского: существительное при послелоге стоит в именительном падеже, а не в творительном! Не нужны суффиксы: a ház előtt (перед домом), NOT *a házat előtt.",
+      "examples": [
+        { "correct": true, "text": "a ház előtt = перед домом (ház без суффиксов)" },
+        { "correct": true, "text": "a fák között = среди деревьев (fák — мн.ч., но без падежа)" }
+      ]
+    }
   }
 }

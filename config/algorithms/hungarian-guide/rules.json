@@ -1,9 +1,14 @@
 [
+  { "stepId": "step1", "choice": "being", "nextStep": "step2_being" },
   { "stepId": "step1", "choice": "action", "nextStep": "step2_action" },
   { "stepId": "step1", "choice": "location", "nextStep": "step2_location" },
   { "stepId": "step1", "choice": "possession", "nextStep": "step2_possession" },
   { "stepId": "step1", "choice": "object", "nextStep": "step2_object" },
   { "stepId": "step1", "choice": "plural", "nextStep": "step2_plural" },
+
+  { "stepId": "step2_being", "choice": "identity", "saveResult": "lenni_identity", "resultId": "lenni_identity" },
+  { "stepId": "step2_being", "choice": "existence", "saveResult": "lenni_existence", "resultId": "lenni_existence" },
+  { "stepId": "step2_being", "choice": "connecting", "saveResult": "conjunctions", "resultId": "conjunctions" },
 
   { "stepId": "step2_action", "choice": "conjugate", "nextStep": "step3_verb_type" },
   { "stepId": "step2_action", "choice": "infinitive", "saveResult": "infinitive", "resultId": "infinitive" },
@@ -11,6 +16,7 @@
   { "stepId": "step2_location", "choice": "inside", "saveResult": "noun_loc_inside", "resultId": "noun_loc_inside" },
   { "stepId": "step2_location", "choice": "surface", "saveResult": "noun_loc_surface", "resultId": "noun_loc_surface" },
   { "stepId": "step2_location", "choice": "near", "saveResult": "noun_loc_near", "resultId": "noun_loc_near" },
+  { "stepId": "step2_location", "choice": "postposition", "saveResult": "postpositions", "resultId": "postpositions" },
 
   { "stepId": "step2_possession", "choice": "first", "saveResult": "noun_poss_first", "resultId": "noun_poss_first" },
   { "stepId": "step2_possession", "choice": "second", "saveResult": "noun_poss_second", "resultId": "noun_poss_second" },

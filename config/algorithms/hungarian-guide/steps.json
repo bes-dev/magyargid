@@ -3,8 +3,15 @@
     "id": "step1",
     "label": "Намерение",
     "title": "Что вы хотите выразить?",
-    "hint": "Выберите ситуацию, которая ближе всего к тому, что вы хотите сказать по-венгерски. Алгоритм подскажет, какие суффиксы и правила использовать.",
+    "hint": "Выберите ситуацию, которая ближе всего к тому, что вы хотите сказать по-венгерски. Алгоритм подскажет нужные правила и конструкции.",
     "options": [
+      {
+        "value": "being",
+        "icon": "🪪",
+        "title": "Описать кто кто-то / какой кто-то",
+        "description": "Я учитель. Она красивая. Он не здесь.",
+        "hint": "Вы хотите сказать, <strong>кто</strong> кто-то (профессия, имя) или <strong>какой</strong> он. Используется глагол <strong>lenni</strong> (быть): vagyok, vagy, van... Важно: в 3-м лице <strong>van часто опускается</strong>!<div class=\"example\">Tanár <strong>vagyok</strong>. = Я учитель.<br>Ő szép. = Она красивая. (без van!)<br>Ő otthon <strong>van</strong>. = Он дома. (van нужен!)</div>"
+      },
       {
         "value": "action",
         "icon": "🏃",
@@ -39,6 +46,35 @@
         "title": "Говорю о нескольких предметах",
         "description": "Столы. Дома. Дома большие.",
         "hint": "Вы хотите сказать, что предметов <strong>несколько</strong>. В венгерском множественное число образуется суффиксом <strong>-k</strong>. Но внимание: после числительных множественное число <strong>не ставится</strong>!<div class=\"example\">asztal → asztal<strong>ok</strong> = столы<br>ház → ház<strong>ak</strong> = дома<br>НО: hat asztal = шесть столов (без -ok!)</div>"
+      }
+    ]
+  },
+  {
+    "id": "step2_being",
+    "label": "Тип",
+    "title": "Что именно вы хотите сказать?",
+    "hint": "Глагол lenni (быть) в венгерском работает по-особому: в 3-м лице он часто опускается!",
+    "options": [
+      {
+        "value": "identity",
+        "icon": "🪪",
+        "title": "Кто кто-то / какой кто-то",
+        "description": "Я учитель. Она красивая. Мы студенты.",
+        "hint": "Вы называете профессию, имя или свойство. В 3-м лице <strong>van/vannak опускается</strong>!<div class=\"example\">Én tanár <strong>vagyok</strong>. = Я учитель.<br>Te szép <strong>vagy</strong>. = Ты красивая.<br>Ő tanár. = Он учитель. <strong>(без van!)</strong></div>"
+      },
+      {
+        "value": "existence",
+        "icon": "📍",
+        "title": "Кто-то есть / находится где-то",
+        "description": "Он дома. Книга на столе. Её здесь нет.",
+        "hint": "Вы говорите о <strong>наличии</strong> или <strong>местонахождении</strong>. Здесь van/vannak <strong>нужен</strong>! Отрицание: <strong>nincs</strong> (= nem + van), <strong>nincsenek</strong> (= nem + vannak).<div class=\"example\">Ő otthon <strong>van</strong>. = Он дома.<br>A könyv az asztalon <strong>van</strong>. = Книга на столе.<br>Ő <strong>nincs</strong> itt. = Его здесь нет.</div>"
+      },
+      {
+        "value": "connecting",
+        "icon": "🔗",
+        "title": "Соединить два факта / два предложения",
+        "description": "Габор и Анна. Не пятница, а четверг. Но...",
+        "hint": "Союзы — слова, связывающие части предложения: <strong>és</strong> (и), <strong>de</strong> (но), <strong>is</strong> (тоже), <strong>pedig</strong> (а), <strong>ha</strong> (если).<div class=\"example\">Gabor <strong>és</strong> Anna = Габор и Анна<br>A könyv érdekes, <strong>de</strong> nehéz. = Книга интересная, но сложная.</div>"
       }
     ]
   },
@@ -90,6 +126,13 @@
         "title": "У кого-то / рядом с чем-то",
         "description": "У друга. У врача. Рядом с домом.",
         "hint": "Суффикс <strong>-nál / -nél</strong>. Используется, когда вы находитесь <strong>у кого-то</strong> (в гостях, на приёме) или <strong>рядом</strong> с предметом.<div class=\"example\">A barátom<strong>nál</strong> vagyok. = Я у друга.<br>Az orvos<strong>nál</strong> vagyok. = Я у врача.<br>A ház<strong>nál</strong> állok. = Я стою у дома.</div>"
+      },
+      {
+        "value": "postposition",
+        "icon": "📐",
+        "title": "Под / над / перед / за / между / вокруг",
+        "description": "Под столом. Над диваном. Перед домом.",
+        "hint": "Послелоги — <strong>отдельные слова</strong>, которые ставятся <strong>после</strong> существительного (а не перед ним, как предлоги в русском!). Существительное остаётся в именительном падеже!<div class=\"example\">a fa <strong>alatt</strong> = под деревом<br>a ház <strong>előtt</strong> = перед домом<br>az asztal <strong>körül</strong> = вокруг стола</div>"
       }
     ]
   },
