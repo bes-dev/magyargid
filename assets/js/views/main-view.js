@@ -22,7 +22,7 @@ class MainView extends BaseView {
                     </ul>
                     <p>Алгоритм проведет вас через серию простых вопросов и покажет нужные суффиксы.</p>
                     <div class="action-buttons">
-                        <button class="btn primary-btn start-btn">Начать подбор суффикса</button>
+                        <button class="btn primary-btn start-btn">Начать</button>
                         <button class="btn secondary-btn carousel-btn" data-tab="tenses">Открыть справочник</button>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ class MainView extends BaseView {
                     <p style="margin-top: 10px;">Не нужно знать грамматические термины — ответьте на пару простых вопросов и получите правила с примерами.</p>
                 </div>
                 <div class="action-buttons">
-                    <button class="btn primary-btn start-btn">Начать подбор суффикса</button>
+                    <button class="btn primary-btn start-btn">Начать</button>
                 </div>
             </div>
 
