@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar Gid - Венгерская грамматика</title>
+    <base href="/">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+</head>
+<body>
+    <!-- Контейнер для основного представления -->
+    <div id="main-container" class="container"></div>
+
+    <!-- Контейнер для шагов алгоритма (изначально скрыт) -->
+    <div id="step-container" class="container hidden"></div>
+
+    <!-- Контейнер для результатов (изначально скрыт) -->
+    <div id="result-container" class="container hidden"></div>
+    
+    <!-- Контейнеры для экранов карусели (изначально скрыты) -->
+    <div id="carousel-container" class="container hidden">
+        <div id="tenses-container"></div>
+        <div id="voices-container"></div>
+        <div id="conditionals-container"></div>
+    </div>
+    
+    <!-- Контейнер для экрана детальной информации о времени (изначально скрыт) -->
+    <div id="tense-detail-container" class="container hidden"></div>
+    
+    <!-- Загрузка модулей JavaScript через type="module" -->
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
