@@ -13,33 +13,36 @@
       { "title": "Ők/Önök (они/Вы мн.)", "formula": "основа + -nak / -nek", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "rajzolok, rajzolsz, rajzol, rajzolunk, rajzoltok, rajzolnak", "translation": "рисовать (rajzolni) — задние гласные", "type": "affirmative" },
-      { "original": "szeretek, szeretsz, szeret, szeretünk, szerettek, szeretnek", "translation": "любить (szeretni) — передние гласные", "type": "affirmative" },
-      { "original": "ütök, ütsz, üt, ütünk, üttök, ütnek", "translation": "бить (ütni) — округлённые передние", "type": "affirmative" }
+      { "original": "Én rajzolok.", "translation": "Я рисую.", "type": "affirmative" },
+      { "original": "Te szeretsz táncolni.", "translation": "Ты любишь танцевать.", "type": "affirmative" },
+      { "original": "Ő minden nap tanul.", "translation": "Он учится каждый день.", "type": "affirmative" },
+      { "original": "Mi itt élünk.", "translation": "Мы здесь живём.", "type": "affirmative" },
+      { "original": "Ti jól írtok.", "translation": "Вы хорошо пишете.", "type": "affirmative" },
+      { "original": "Ők sétálnak a parkban.", "translation": "Они гуляют в парке.", "type": "affirmative" }
     ],
     "usage": [
       "Самая большая группа глаголов",
       "Основа не заканчивается на -s, -z, -sz или -ik",
-      "Выбор гласной в окончании определяется гармонией гласных"
+      "Выбор гласной определяется гармонией гласных: задние → -ok, передние → -ek, округлённые → -ök"
     ],
     "markers": [
-      "задние (a,á,o,ó,u,ú) → -ok, -unk, -tok, -nak",
-      "передние (e,é,i,í) → -ek, -ünk, -tek, -nek",
-      "округлённые (ö,ő,ü,ű) → -ök, -ünk, -tök, -nek"
+      "rajzol (рисует), szeret (любит), tanul (учится)",
+      "ír (пишет), él (живёт), ül (сидит), áll (стоит)",
+      "jár (ходит), akar (хочет), sétál (гуляет)"
     ],
     "additionalInfo": {
-      "important": "В 3-м лице единственного числа (Ő) окончание не добавляется — используется чистая основа глагола.",
+      "important": "В 3-м лице единственного числа (Ő) окончание не добавляется — используется чистая основа. Личное местоимение можно опускать — окончание глагола само указывает на лицо.",
       "examples": [
-        { "correct": true, "text": "Én rajzolok. (Я рисую)" },
-        { "correct": true, "text": "Ő rajzol. (Он/она рисует)" },
+        { "correct": true, "text": "Rajzolok. = Я рисую. (без Én — понятно из окончания)" },
+        { "correct": true, "text": "Ő rajzol. = Он рисует. (основа без окончания)" },
         { "correct": false, "text": "Te rajzolol.", "correction": "Te rajzolsz." }
       ]
     },
     "comparison": [
       {
-        "title": "Обычные vs -s глаголы",
-        "first": "Te rajzolsz (обычный — окончание -sz)",
-        "second": "Te keresel (-s глагол — окончание -el)"
+        "title": "Обычные vs -s глаголы (разница только в Te)",
+        "first": "Te rajzolsz. (обычный — окончание -sz)",
+        "second": "Te keresel. (-s глагол — окончание -el)"
       }
     ]
   },
@@ -57,35 +60,28 @@
       { "title": "Ők/Önök (они/Вы мн.)", "formula": "основа + -nak / -nek", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "keresek, keresel, keres, keresünk, kerestek, keresnek", "translation": "искать (keresni)", "type": "affirmative" },
-      { "original": "olvasok, olvasol, olvas, olvasunk, olvastok, olvasnak", "translation": "читать (olvasni)", "type": "affirmative" },
-      { "original": "nézek, nézel, néz, nézünk, néztek, néznek", "translation": "смотреть (nézni)", "type": "affirmative" }
+      { "original": "Én keresek egy boltot.", "translation": "Я ищу магазин.", "type": "affirmative" },
+      { "original": "Te olvasol egy könyvet.", "translation": "Ты читаешь книгу.", "type": "affirmative" },
+      { "original": "Ő néz egy filmet.", "translation": "Он смотрит фильм.", "type": "affirmative" },
+      { "original": "Mi főzünk vacsorát.", "translation": "Мы готовим ужин.", "type": "affirmative" }
     ],
     "usage": [
-      "Глаголы, основа которых заканчивается на -s, -z или -sz",
-      "Единственное отличие от обычных: во 2-м лице (Te) окончание -ol/-el/-öl вместо -sz",
+      "Основа заканчивается на -s, -z или -sz",
+      "Единственное отличие от обычных: Te → -ol/-el/-öl (вместо -sz)",
       "Все остальные окончания совпадают с обычными"
     ],
     "markers": [
-      "olvas (читает) — основа на -s",
-      "néz (смотрит) — основа на -z",
-      "tesz (кладёт) — основа на -sz",
-      "mos (стирает), keres (ищет), főz (варит)"
+      "olvas (читает), keres (ищет), mos (стирает) — на -s",
+      "néz (смотрит), főz (варит), magyaráz (объясняет) — на -z",
+      "tesz (кладёт), vesz (берёт) — на -sz"
     ],
     "additionalInfo": {
-      "important": "Причина особого окончания: если бы к основе на -s добавилось -sz, получилось бы неудобное сочетание -ssz. Поэтому используется -ol/-el/-öl.",
+      "important": "Причина особого окончания: -s + -sz дало бы неудобное -ssz. Поэтому для Te используется -ol/-el/-öl.",
       "examples": [
-        { "correct": true, "text": "Te keresel. (Ты ищешь)" },
+        { "correct": true, "text": "Te keresel. = Ты ищешь." },
         { "correct": false, "text": "Te keressz.", "correction": "Te keresel." }
       ]
-    },
-    "comparison": [
-      {
-        "title": "Сводная таблица: Te (ты)",
-        "first": "Обычный: основа + -sz (rajzolsz)",
-        "second": "-s/-z/-sz: основа + -ol/-el/-öl (keresel)"
-      }
-    ]
+    }
   },
   "verb_ik": {
     "id": "verb_ik",
@@ -101,40 +97,36 @@
       { "title": "Ők/Önök (они/Вы мн.)", "formula": "основа + -nak / -nek", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "lakom/lakok, laksz, lakik, lakunk, laktok, laknak", "translation": "проживать (lakni) — lakik", "type": "affirmative" },
-      { "original": "esem/esek, esel, esik, esünk, estek, esnek", "translation": "падать (esni) — esik (шипящая основа!)", "type": "affirmative" },
-      { "original": "dolgozom/dolgozok, dolgozol, dolgozik, dolgozunk, dolgoztok, dolgoznak", "translation": "работать (dolgozni) — dolgozik", "type": "affirmative" }
+      { "original": "Én dolgozom egy irodában.", "translation": "Я работаю в офисе.", "type": "affirmative" },
+      { "original": "Te Budapesten laksz.", "translation": "Ты живёшь в Будапеште.", "type": "affirmative" },
+      { "original": "Ő minden nap dolgozik.", "translation": "Он работает каждый день.", "type": "affirmative" },
+      { "original": "Ő jól eszik.", "translation": "Он хорошо ест.", "type": "affirmative" },
+      { "original": "Ők este alszanak.", "translation": "Они спят вечером.", "type": "affirmative" }
     ],
     "usage": [
-      "Глаголы, которые в 3-м лице ед.ч. имеют окончание -ik",
-      "В словарях даются именно в форме 3-го лица с -ik",
-      "В 1-м лице допустимы оба варианта: -om/-em/-öm и -ok/-ek/-ök",
-      "Если основа на -s/-z/-sz, для Te используется -ol/-el/-öl (как у шипящих)"
+      "В словарях даются в форме на -ik: dolgozik, lakik, eszik, alszik",
+      "В 1-м лице допустимы оба варианта: dolgozom и dolgozok",
+      "Если основа на -s/-z/-sz, для Te: -ol/-el/-öl (как у шипящих)"
     ],
     "markers": [
       "dolgozik (работает), lakik (проживает)",
       "eszik (ест), iszik (пьёт), alszik (спит)",
-      "fürdik (купается), utazik (путешествует)",
-      "emlékszik (помнит), túrázik (ходит в походы)"
+      "fürdik (купается), zuhanyozik (принимает душ)",
+      "utazik (путешествует), emlékszik (помнит)"
     ],
     "additionalInfo": {
-      "important": "Инфинитив -ik глаголов: убираем -ik и добавляем -ni. Пример: dolgozik → dolgozni (работать). Для основ на два согласных: alszik → aludni (спать).",
+      "important": "Инфинитив -ik глаголов: убираем -ik, добавляем -ni. dolgozik → dolgozni. Неправильные: eszik → enni, iszik → inni, alszik → aludni.",
       "examples": [
-        { "correct": true, "text": "Ő dolgozik. (Он работает — с -ik!)" },
-        { "correct": true, "text": "Én dolgozom. (Я работаю — с -om)" },
-        { "correct": true, "text": "Én dolgozok. (Я работаю — с -ok, тоже допустимо)" }
+        { "correct": true, "text": "Ő dolgozik. = Он работает. (3-е лицо с -ik)" },
+        { "correct": true, "text": "Én dolgozom. = Я работаю. (1-е лицо с -om)" },
+        { "correct": true, "text": "Én dolgozok. = Я работаю. (тоже допустимо с -ok)" }
       ]
     },
     "comparison": [
       {
-        "title": "Обычный vs -ik: 3-е лицо (Ő)",
-        "first": "Обычный: rajzol (без окончания)",
-        "second": "-ik: dolgozik (окончание -ik)"
-      },
-      {
-        "title": "Обычный vs -ik: 1-е лицо (Én)",
-        "first": "Обычный: только -ok/-ek/-ök",
-        "second": "-ik: -om/-em/-öm ИЛИ -ok/-ek/-ök"
+        "title": "3-е лицо: обычный vs -ik",
+        "first": "Ő rajzol. (без окончания)",
+        "second": "Ő dolgozik. (окончание -ik)"
       }
     ]
   },
@@ -152,321 +144,286 @@
       { "title": "Ők/Önök (они/Вы мн.)", "formula": "основа + -anak / -enek", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "tanítok, tanítasz, tanít, tanítunk, tanítotok, tanítanak", "translation": "учить (tanítani) — долгая í + t", "type": "affirmative" },
-      { "original": "festek, festesz, fest, festünk, festetek, festenek", "translation": "рисовать красками (festeni) — два согл.", "type": "affirmative" },
-      { "original": "küldök, küldesz, küld, küldünk, küldötök, küldenek", "translation": "отправлять (küldeni) — два согл.", "type": "affirmative" }
+      { "original": "Ő magyart tanít.", "translation": "Он преподаёт венгерский.", "type": "affirmative" },
+      { "original": "Te jól tanítasz.", "translation": "Ты хорошо учишь.", "type": "affirmative" },
+      { "original": "Én levelet küldök.", "translation": "Я отправляю письмо.", "type": "affirmative" },
+      { "original": "Ők festéket festenek.", "translation": "Они рисуют красками.", "type": "affirmative" }
     ],
     "usage": [
-      "Основа заканчивается на две согласные подряд (fest, küld, mond)",
-      "Или на долгую гласную + t (tanít, segít)",
-      "Соединительная гласная нужна, чтобы избежать трёх согласных подряд",
-      "Затрагивает окончания Te, Ti и Ők"
+      "Основа на две согласные подряд: fest, küld, mond, tart",
+      "Или на долгую гласную + t: tanít, segít",
+      "Соединительная гласная нужна чтобы избежать трёх согласных подряд",
+      "Для Én и Mi соединительная гласная НЕ нужна"
     ],
     "markers": [
-      "tanít (учит), segít (помогает) — долгая гласная + t",
-      "fest (рисует), küld (отправляет), mond (говорит) — 2 согласные",
-      "tart (держит), ért (понимает)"
+      "tanít (учит), segít (помогает), fest (рисует)",
+      "küld (отправляет), mond (говорит), tart (держит)"
     ],
     "additionalInfo": {
-      "important": "Соединительная гласная подчиняется гармонии гласных: задние → -a- (tanítasz), передние → -e- (festesz). Для Én и Mi соединительная гласная НЕ нужна.",
+      "important": "Соединительная гласная по гармонии: задние → -a- (tanítasz), передние → -e- (festesz).",
       "examples": [
-        { "correct": true, "text": "Te tanítasz. (Ты учишь — с соединительной -a-)" },
-        { "correct": false, "text": "Te tanítsz.", "correction": "Te tanítasz. (три согласные подряд!)" }
+        { "correct": true, "text": "Te tanítasz. = Ты учишь. (соединительная -a-)" },
+        { "correct": false, "text": "Te tanítsz.", "correction": "Te tanítasz. (нельзя три согласных подряд)" }
       ]
-    },
-    "comparison": [
-      {
-        "title": "Обычный vs с соединительной: Te",
-        "first": "rajzolsz (обычный — просто -sz)",
-        "second": "tanítasz (соединительная — -asz)"
-      },
-      {
-        "title": "Обычный vs с соединительной: Ők",
-        "first": "rajzolnak (обычный — -nak)",
-        "second": "tanítanak (соединительная — -anak)"
-      }
-    ]
+    }
   },
   "infinitive": {
     "id": "infinitive",
     "icon": "📝",
     "title": "Инфинитив (-ni)",
-    "subtitle": "Неопределённая форма глагола",
+    "subtitle": "Неопределённая форма — Что делать? (Mit csinálni?)",
     "formulas": [
-      { "title": "Основа на 1 согласную", "formula": "основа + -ni", "type": "affirmative" },
+      { "title": "Обычная основа", "formula": "основа (3-е лицо) + -ni", "type": "affirmative" },
       { "title": "Основа на 2 согласные", "formula": "основа + -ani (задние) / -eni (передние)", "type": "affirmative" },
-      { "title": "Неправильные глаголы", "formula": "особая форма + -nni", "type": "question" }
+      { "title": "-ik глаголы", "formula": "убрать -ik, добавить -ni", "type": "affirmative" },
+      { "title": "Неправильные", "formula": "особая основа + -nni", "type": "question" }
     ],
     "examples": [
-      { "original": "rajzol → rajzolni, szeret → szeretni, ül → ülni", "translation": "Обычные: основа + -ni", "type": "affirmative" },
-      { "original": "hall → hallani, mond → mondani, ment → menteni", "translation": "2 согласные: + соединительная + -ni", "type": "affirmative" },
-      { "original": "eszik → enni, iszik → inni, megy → menni, jön → jönni", "translation": "Неправильные глаголы", "type": "question" },
-      { "original": "tesz → tenni, vesz → venni, visz → vinni, hisz → hinni", "translation": "Неправильные глаголы (продолжение)", "type": "question" }
+      { "original": "Szeretek rajzolni.", "translation": "Я люблю рисовать.", "type": "affirmative" },
+      { "original": "Akarok aludni.", "translation": "Я хочу спать.", "type": "affirmative" },
+      { "original": "Szeretnék enni.", "translation": "Я хотел бы поесть.", "type": "question" },
+      { "original": "Kell menni.", "translation": "Надо идти.", "type": "question" }
     ],
     "usage": [
-      "Отвечает на вопрос Что делать? (Mit csinálni?)",
-      "В словарях глаголы даются в 3-м лице ед.ч. (основная форма), не в инфинитиве",
-      "Для -ik глаголов: убрать -ik, добавить -ni (dolgozik → dolgozni)"
+      "В словарях глаголы даются в 3-м лице ед.ч., не в инфинитиве",
+      "rajzol → rajzolni, hall → hallani, dolgozik → dolgozni",
+      "Неправильные: eszik→enni, iszik→inni, megy→menni, jön→jönni, tesz→tenni, vesz→venni, visz→vinni, hisz→hinni"
     ],
     "markers": [
-      "álmodni (мечтать), aludni (спать)",
-      "repülni (летать), örülni (радоваться)",
-      "állni (стоять), ülni (сидеть)"
+      "Используется после: akar (хочет), szeret (любит), tud (может/умеет), kell (надо)"
     ],
     "additionalInfo": {
-      "important": "Соединительные гласные для инфинитива: a (для задних гласных) и e (для передних гласных). Используются когда основа заканчивается на два согласных.",
+      "important": "Соединительная гласная: a (задние) или e (передние) — только когда основа на два согласных. hall → hallani, ment → menteni.",
       "examples": [
-        { "correct": true, "text": "hallani (слышать) — hall + a + ni" },
-        { "correct": true, "text": "menteni (сохранить) — ment + e + ni" },
-        { "correct": true, "text": "enni (есть) — неправильный!" }
+        { "correct": true, "text": "hallani = слышать (hall + a + ni)" },
+        { "correct": true, "text": "menteni = сохранить (ment + e + ni)" },
+        { "correct": true, "text": "enni = есть (неправильный: eszik → enni)" }
       ]
-    },
-    "comparison": [
-      {
-        "title": "Словарная форма vs инфинитив",
-        "first": "eszik (ест — так в словаре)",
-        "second": "enni (есть — инфинитив)"
-      }
-    ]
+    }
   },
   "noun_plural_vowel": {
     "id": "noun_plural_vowel",
     "icon": "🔵",
     "title": "Множественное число: слова на гласную",
-    "subtitle": "Суффикс -k добавляется напрямую",
+    "subtitle": "Суффикс -k напрямую, -a→-ák, -e→-ék",
     "formulas": [
       { "title": "На -ó, -ő, -ú, -ű, -i, -o, -ö, -ü", "formula": "слово + -k", "type": "affirmative" },
       { "title": "На -a", "formula": "-a → -ák", "type": "affirmative" },
       { "title": "На -e", "formula": "-e → -ék", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "folyó → folyók, ajtó → ajtók, fiú → fiúk, nő → nők", "translation": "Просто + k", "type": "affirmative" },
-      { "original": "konyha → konyhák, kutya → kutyák, alma → almák", "translation": "a → ák", "type": "affirmative" },
-      { "original": "lecke → leckék, körte → körték", "translation": "e → ék", "type": "affirmative" }
+      { "original": "Az ajtók nyitva vannak.", "translation": "Двери открыты. (ajtó → ajtók)", "type": "affirmative" },
+      { "original": "A kutyák a parkban vannak.", "translation": "Собаки в парке. (kutya → kutyák)", "type": "affirmative" },
+      { "original": "A leckék nehezek.", "translation": "Уроки сложные. (lecke → leckék)", "type": "affirmative" },
+      { "original": "Hat alma — НЕ hat almák!", "translation": "Шесть яблок — после числительного ед.ч.!", "type": "question" }
     ],
     "usage": [
-      "Самый простой случай — -k добавляется без соединительной гласной",
-      "Исключение: -a и -e удлиняются перед -k",
-      "После числительных множественное число НЕ используется: hat alma (шесть яблок)"
+      "Самый простой случай — -k добавляется напрямую",
+      "-a и -e удлиняются: alma → almák, körte → körték",
+      "После числительных и слов sok, kevés, néhány — единственное число!"
     ],
-    "markers": ["sok (много), kevés (мало), néhány (несколько) — после них тоже единственное число"],
-    "additionalInfo": {
-      "important": "Правило удлинения -a → -á и -e → -é работает всегда при добавлении любого суффикса, не только множественного числа!"
-    }
+    "markers": ["folyó→folyók, fiú→fiúk, nő→nők, alma→almák, körte→körték"]
   },
   "noun_plural_back": {
     "id": "noun_plural_back",
     "icon": "🟠",
     "title": "Множественное число: задние гласные + согласная",
-    "subtitle": "Суффикс -ok (стандартно) или -ak (исключения)",
+    "subtitle": "Суффикс -ok (стандарт) или -ak (исключения)",
     "formulas": [
       { "title": "Стандартно", "formula": "слово + -ok", "type": "affirmative" },
       { "title": "Исключения", "formula": "слово + -ak", "type": "question" },
       { "title": "С укорочением гласной", "formula": "á→a, ú→u + -ak", "type": "negative" }
     ],
     "examples": [
-      { "original": "asztal → asztalok, barát → barátok, állat → állatok", "translation": "Стандартно: + ok", "type": "affirmative" },
-      { "original": "ház → házak, út → utak, toll → tollak", "translation": "Исключения: + ak", "type": "question" },
-      { "original": "kanál → kanalak, madár → madarak, nyár → nyarak", "translation": "С укорочением гласной", "type": "negative" }
+      { "original": "Az asztalok a szobában vannak.", "translation": "Столы в комнате. (asztal → asztalok)", "type": "affirmative" },
+      { "original": "A barátok a parkban sétálnak.", "translation": "Друзья гуляют в парке. (barát → barátok)", "type": "affirmative" },
+      { "original": "A házak nagyok.", "translation": "Дома большие. (ház → házak — исключение!)", "type": "question" },
+      { "original": "Az utak hosszúak.", "translation": "Дороги длинные. (út → utak — исключение!)", "type": "question" }
     ],
     "usage": [
-      "Задние гласные в слове: a, á, o, ó, u, ú",
-      "Стандартное окончание -ok, но некоторые слова берут -ak (нужно запомнить)",
-      "Слова с á, ú в последнем закрытом слоге могут укорачивать гласную"
+      "Задние гласные: a, á, o, ó, u, ú",
+      "Стандарт -ok; исключения (ház, út, ár, toll): -ak",
+      "Укорочение: kanál→kanalak, madár→madarak, nyár→nyarak"
     ],
-    "markers": [
-      "Стандарт -ok: asztal, barát, állat, lap, ok",
-      "Исключения -ak: ház, út, ár, toll, -tár"
-    ],
+    "markers": ["Стандарт -ok: asztal, barát, állat, lap", "Исключения -ak: ház, út, ár, toll"],
     "additionalInfo": {
-      "important": "Слова с удалением гласной: titok → titkok, torok → torkok, terem → termek. В некоторых словах выпадает последняя гласная в основе."
+      "important": "Слова с удалением гласной: titok→titkok (секрет), torok→torkok (горло), terem→termek (зал)."
     }
   },
   "noun_plural_front": {
     "id": "noun_plural_front",
     "icon": "🟢",
-    "title": "Множественное число: передние гласные (e,é,i,í) + согласная",
+    "title": "Множественное число: передние (e,é,i,í) + согласная",
     "subtitle": "Суффикс -ek",
     "formulas": [
       { "title": "Стандартно", "formula": "слово + -ek", "type": "affirmative" },
-      { "title": "С укорочением гласной", "formula": "é→e, í→i + -ek", "type": "negative" }
+      { "title": "С укорочением", "formula": "é→e, í→i + -ek", "type": "negative" }
     ],
     "examples": [
-      { "original": "szekrény → szekrények, ember → emberek, szőnyeg → szőnyegek", "translation": "Стандартно: + ek", "type": "affirmative" },
-      { "original": "egér → egerek, víz → vizek, kenyér → kenyerek", "translation": "С укорочением: é→e, í→i", "type": "negative" }
+      { "original": "Az emberek a piacon vannak.", "translation": "Люди на рынке. (ember → emberek)", "type": "affirmative" },
+      { "original": "A szekrények a szobában állnak.", "translation": "Шкафы стоят в комнате. (szekrény → szekrények)", "type": "affirmative" },
+      { "original": "A vizek tiszták.", "translation": "Воды чистые. (víz → vizek — укорочение í→i)", "type": "negative" }
     ],
     "usage": [
-      "Слово содержит передние нелабиализованные гласные: e, é, i, í",
-      "Последний слог НЕ содержит ö, ő, ü, ű",
-      "Укорочение гласной: é→e, í→i (для некоторых односложных слов)"
+      "Передние нелабиализованные: e, é, i, í",
+      "Укорочение: egér→egerek, víz→vizek, kenyér→kenyerek"
     ],
     "markers": ["szekrény, ember, szőnyeg, levél, kéz, tél"]
   },
   "noun_plural_front_round": {
     "id": "noun_plural_front_round",
     "icon": "🟣",
-    "title": "Множественное число: округлённые передние (ö,ő,ü,ű) + согласная",
-    "subtitle": "Суффикс -ök",
+    "title": "Множественное число: округлённые (ö,ő,ü,ű) + согласная",
+    "subtitle": "Суффикс -ök (искл: -ek)",
     "formulas": [
       { "title": "Стандартно", "formula": "слово + -ök", "type": "affirmative" },
       { "title": "Исключения", "formula": "слово + -ek", "type": "question" }
     ],
     "examples": [
-      { "original": "mérnök → mérnökök, függöny → függönyök, török → törökök", "translation": "Стандартно: + ök", "type": "affirmative" },
-      { "original": "könyv → könyvek, hölgy → hölgyek", "translation": "Исключения: + ek", "type": "question" }
+      { "original": "A mérnökök az irodában dolgoznak.", "translation": "Инженеры работают в офисе. (mérnök → mérnökök)", "type": "affirmative" },
+      { "original": "A függönyök szépek.", "translation": "Занавески красивые. (függöny → függönyök)", "type": "affirmative" },
+      { "original": "A könyvek az asztalon vannak.", "translation": "Книги на столе. (könyv → könyvek — исключение!)", "type": "question" }
     ],
     "usage": [
       "Последний слог содержит ö, ő, ü или ű",
-      "Стандартно -ök, но есть исключения с -ek (könyv, hölgy)"
+      "Исключения с -ek: könyv→könyvek, hölgy→hölgyek"
     ],
-    "markers": ["mérnök, függöny, török, görög, könyv (искл.), hölgy (искл.)"],
+    "markers": ["mérnök, függöny, török, görög | искл: könyv, hölgy"],
     "additionalInfo": {
-      "important": "Слова с буквой v: односложные слова, где при добавлении суффикса появляется v. Пример: kő → kövek (ő→ö + v)."
+      "important": "Слова с буквой v: kő→kövek (камни), ló→lovak (лошади), tó→tavak (озёра) — при склонении появляется v."
     }
   },
   "noun_acc_vowel": {
     "id": "noun_acc_vowel",
     "icon": "🔵",
     "title": "Винительный падеж: слова на гласную",
-    "subtitle": "Суффикс -t добавляется напрямую",
+    "subtitle": "Кого? Что? (Kit? Mit?) — суффикс -t напрямую",
     "formulas": [
       { "title": "На любую гласную кроме -a/-e", "formula": "слово + -t", "type": "affirmative" },
       { "title": "На -a", "formula": "-a → -át", "type": "affirmative" },
       { "title": "На -e", "formula": "-e → -ét", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "virsli → virslit, túró → túrót, szőlő → szőlőt", "translation": "Просто + t", "type": "affirmative" },
-      { "original": "sonka → sonkát, káposzta → káposztát, uborka → uborkát", "translation": "a → át", "type": "affirmative" }
+      { "original": "Kérek egy kávét.", "translation": "Попрошу кофе. (kávé → kávét)", "type": "affirmative" },
+      { "original": "Szeretnék egy sonkát.", "translation": "Я хотел бы ветчину. (sonka → sonkát)", "type": "affirmative" },
+      { "original": "Kérek két kiló szép piros almát.", "translation": "Попрошу два кило красивых красных яблок.", "type": "affirmative" },
+      { "original": "Szeretnék ezt az autót.", "translation": "Я хотел бы эту машину. (ez→ezt, autó→autót)", "type": "affirmative" }
     ],
     "usage": [
-      "Самый простой случай — просто добавить -t",
-      "-a удлиняется в -á, -e в -é перед -t"
+      "Просто добавить -t; -a→-á, -e→-é перед -t",
+      "В конструкции с прилагательным -t только на последнем слове"
     ],
-    "markers": ["Kit? (Кого?) — для людей", "Mit? (Что?) — для предметов"]
+    "markers": ["Kit? (Кого?)", "Mit? (Что?)", "ez→ezt, az→azt"]
   },
   "noun_acc_special": {
     "id": "noun_acc_special",
     "icon": "🟡",
-    "title": "Винительный падеж: слова на -l, -ly, -j, -n, -ny, -r, -s, -sz, -z",
-    "subtitle": "Обычно суффикс -t без соединительной гласной",
+    "title": "Винительный падеж: -l, -ly, -j, -n, -ny, -r, -s, -sz, -z",
+    "subtitle": "Обычно -t напрямую, но есть исключения!",
     "formulas": [
-      { "title": "Правильные слова", "formula": "слово + -t", "type": "affirmative" },
-      { "title": "Неправильные слова", "formula": "изменённая основа + -at / -et", "type": "question" }
+      { "title": "Правильные", "formula": "слово + -t", "type": "affirmative" },
+      { "title": "Неправильные", "formula": "изменённая основа + -at / -et", "type": "question" }
     ],
     "examples": [
-      { "original": "asztal → asztalt, banán → banánt, lány → lányt, zsír → zsírt, tojás → tojást", "translation": "Правильные: просто + t", "type": "affirmative" },
-      { "original": "tej → tejet, vaj → vajat, méz → mézet, hely → helyet", "translation": "Неправильные: с соединительной гласной", "type": "question" },
-      { "original": "kenyér → kenyeret, madár → madarat, ház → házat, fal → falat", "translation": "Неправильные: с укорочением гласной", "type": "question" }
+      { "original": "Látom az asztalt.", "translation": "Я вижу стол. (asztal → asztalt)", "type": "affirmative" },
+      { "original": "Szeretem a banánt.", "translation": "Я люблю бананы. (banán → banánt)", "type": "affirmative" },
+      { "original": "Kérek tejet.", "translation": "Попрошу молоко. (tej → tejet — исключение!)", "type": "question" },
+      { "original": "Szeretem a kenyeret.", "translation": "Я люблю хлеб. (kenyér → kenyeret — исключение!)", "type": "question" }
     ],
     "usage": [
-      "Большинство слов на эти согласные получают -t напрямую",
-      "Неправильные слова нужно запомнить — они же неправильные и во множественном числе",
-      "Правильные: baj→bajt, kár→kárt, bál→bált, bér→bért"
+      "Большинство: просто -t (asztalt, banánt, lányt, tojást)",
+      "Неправильные = те же, что и во мн.ч.: tej→tejet, vaj→vajat, méz→mézet, kenyér→kenyeret, madár→madarat, ház→házat"
     ],
-    "markers": [
-      "Правильные: asztal, banán, lány, zsír, tojás, baj, kár",
-      "Неправильные: tej, vaj, méz, hely, kenyér, madár, nyár, szél, ház, fal"
-    ],
+    "markers": ["Правильные: asztal, banán, lány, zsír, tojás", "Неправильные: tej, vaj, méz, hely, kenyér, madár, ház, fal"],
     "additionalInfo": {
-      "important": "Если слово неправильное во множественном числе (с соединительной гласной), оно будет неправильным и в винительном падеже."
+      "important": "Если слово неправильное во множественном числе, оно неправильное и в винительном."
     }
   },
   "noun_acc_other": {
     "id": "noun_acc_other",
     "icon": "🔴",
-    "title": "Винительный падеж: слова на другие согласные",
+    "title": "Винительный падеж: другие согласные",
     "subtitle": "Соединительная гласная + t",
     "formulas": [
-      { "title": "Задние гласные (a,á,o,ó,u,ú)", "formula": "слово + -ot", "type": "affirmative" },
-      { "title": "Передние гласные (e,é,i,í)", "formula": "слово + -et", "type": "affirmative" },
+      { "title": "Задние (a,á,o,ó,u,ú)", "formula": "слово + -ot", "type": "affirmative" },
+      { "title": "Передние (e,é,i,í)", "formula": "слово + -et", "type": "affirmative" },
       { "title": "Округлённые (ö,ő,ü,ű)", "formula": "слово + -öt", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "bolt → boltot, dolog → dolgot", "translation": "Задние: + ot", "type": "affirmative" },
-      { "original": "zöldség → zöldséget, könyv → könyvet, víz → vizet", "translation": "Передние: + et", "type": "affirmative" },
-      { "original": "gyümölcs → gyümölcsöt", "translation": "Округлённые: + öt", "type": "affirmative" }
+      { "original": "Keresek egy boltot.", "translation": "Я ищу магазин. (bolt → boltot)", "type": "affirmative" },
+      { "original": "Olvasok egy könyvet.", "translation": "Я читаю книгу. (könyv → könyvet)", "type": "affirmative" },
+      { "original": "Szeretek gyümölcsöt enni.", "translation": "Я люблю есть фрукты. (gyümölcs → gyümölcsöt)", "type": "affirmative" }
     ],
     "usage": [
-      "Для согласных, не входящих в список -l,-ly,-j,-n,-ny,-r,-s,-sz,-z",
-      "Например: -b, -c, -cs, -d, -f, -g, -gy, -k, -m, -p, -t, -ty, -v",
-      "Соединительная гласная выбирается по гармонии гласных"
+      "Согласные кроме -l,-ly,-j,-n,-ny,-r,-s,-sz,-z",
+      "Соединительная гласная по гармонии: -ot / -et / -öt",
+      "Указательные: ez→ezt, az→azt; мн.ч.: ezek→ezeket, azok→azokat"
     ],
-    "markers": [
-      "Указательные: ez → ezt, az → azt",
-      "Множественное: ezek → ezeket, azok → azokat"
-    ],
+    "markers": ["ez→ezt, az→azt", "ezek→ezeket, azok→azokat"],
     "additionalInfo": {
-      "important": "В сложных конструкциях -t добавляется ТОЛЬКО к последнему слову: Kérek két kiló szép piros almát (а не *almákt или *kilót almát)."
+      "important": "Суффикс -t только на последнем слове: Kérek két kiló szép piros almát (не *kilót *almákt)."
     }
   },
   "noun_loc_inside": {
     "id": "noun_loc_inside",
     "icon": "🏠",
     "title": "Внутри: -ban / -ben",
-    "subtitle": "В чём-то, внутри чего-то",
+    "subtitle": "В чём-то — здания, страны, закрытые пространства",
     "formulas": [
-      { "title": "Задние гласные (a,á,o,ó,u,ú)", "formula": "слово + -ban", "type": "affirmative" },
-      { "title": "Передние гласные (e,é,i,í,ö,ő,ü,ű)", "formula": "слово + -ben", "type": "affirmative" },
-      { "title": "Указательные местоимения", "formula": "ez → ebben, az → abban", "type": "question" }
+      { "title": "Задние гласные", "formula": "слово + -ban", "type": "affirmative" },
+      { "title": "Передние гласные", "formula": "слово + -ben", "type": "affirmative" },
+      { "title": "Указательные", "formula": "ez→ebben, az→abban + сущ. с суффиксом", "type": "question" }
     ],
     "examples": [
-      { "original": "A boltban vagyok. / Ausztriában lakom. / A parkban sétálok.", "translation": "Я в магазине. / Я живу в Австрии. / Я гуляю в парке.", "type": "affirmative" },
-      { "original": "Ebben a házban lakom. / Abban az iskolában tanulok.", "translation": "Я живу в этом доме. / Я учусь в той школе.", "type": "question" }
+      { "original": "A boltban vagyok.", "translation": "Я в магазине.", "type": "affirmative" },
+      { "original": "Ausztriában lakom.", "translation": "Я живу в Австрии.", "type": "affirmative" },
+      { "original": "A parkban sétálok.", "translation": "Я гуляю в парке.", "type": "affirmative" },
+      { "original": "Ebben a házban lakom.", "translation": "Я живу в этом доме.", "type": "question" },
+      { "original": "A lakásokban hideg van.", "translation": "В квартирах холодно. (мн.ч. + падеж)", "type": "affirmative" }
     ],
     "usage": [
-      "Здания и закрытые помещения: bolt, iskola, étterem, kórház",
-      "Страны и города за пределами Венгрии: Ausztriában, Párizsban",
-      "Предметы, в которые можно что-то положить: táska, szekrény",
-      "Парк — хоть и открытое место, но parkban (как в русском — «в парке»)"
+      "Здания: bolt, iskola, étterem, kórház, park",
+      "Страны и города вне Венгрии: Ausztriában, Párizsban",
+      "Венгерские города на -j,-m,-n,-ny,-i: Sopronban, Esztergomban (искл: Győrben)"
     ],
-    "markers": [
-      "Венгерские города на -j,-m,-n,-ny,-i → -ban/-ben: Sopronban, Esztergomban",
-      "Исключение: Győrben"
-    ],
+    "markers": ["Подсказка: где по-русски «в» — там -ban/-ben"],
     "additionalInfo": {
-      "important": "Указательные местоимения согласуются с существительным: ebben a házBAN (двойная маркировка — и местоимение, и существительное получают суффикс)."
+      "important": "Указательные — двойная маркировка: ebben a házBAN (и местоимение, и сущ. с суффиксом)."
     },
     "comparison": [
-      {
-        "title": "Наречия места (Hol?)",
-        "first": "itt (тут), ott (там), sehol (нигде)",
-        "second": "mindenhol (везде), valahol (где-то)"
-      },
-      {
-        "title": "Itthon vs Otthon",
-        "first": "Itthon vagyok. (Я дома — и говорю из дома)",
-        "second": "Otthon van. (Он дома — а я не дома)"
-      }
+      { "title": "Itthon vs Otthon", "first": "Itthon vagyok. = Я дома (и говорю из дома).", "second": "Otthon van. = Он дома (а я не дома)." },
+      { "title": "Наречия места", "first": "itt (тут), ott (там), sehol (нигде)", "second": "mindenhol (везде), valahol (где-то)" }
     ]
   },
   "noun_loc_surface": {
     "id": "noun_loc_surface",
     "icon": "🏔️",
     "title": "На поверхности: -n / -on / -en / -ön",
-    "subtitle": "На чём-то, на поверхности",
+    "subtitle": "Открытые места, события, Венгрия и её города",
     "formulas": [
       { "title": "На гласную", "formula": "слово + -n", "type": "affirmative" },
       { "title": "Задние (a,á,o,ó,u,ú)", "formula": "слово + -on", "type": "affirmative" },
       { "title": "Передние (e,é,i,í)", "formula": "слово + -en", "type": "affirmative" },
       { "title": "Округлённые (ö,ő,ü,ű)", "formula": "слово + -ön", "type": "affirmative" },
-      { "title": "Указательные", "formula": "ez → ezen, az → azon", "type": "question" }
+      { "title": "Указательные", "formula": "ez→ezen, az→azon + сущ. с суффиксом", "type": "question" }
     ],
     "examples": [
-      { "original": "A piacon / az egyetemen / a koncerten / a postán vagyok.", "translation": "На рынке / в университете / на концерте / на почте.", "type": "affirmative" },
-      { "original": "Budapesten élek. / Magyarországon lakom. / Máltán vagyok.", "translation": "В Будапеште / В Венгрии / На Мальте.", "type": "affirmative" }
+      { "original": "A piacon vagyok.", "translation": "Я на рынке.", "type": "affirmative" },
+      { "original": "Az egyetemen tanulok.", "translation": "Я учусь в университете.", "type": "affirmative" },
+      { "original": "Budapesten élek.", "translation": "Я живу в Будапеште.", "type": "affirmative" },
+      { "original": "Magyarországon lakom.", "translation": "Я живу в Венгрии.", "type": "affirmative" },
+      { "original": "A koncerten vagyunk.", "translation": "Мы на концерте.", "type": "affirmative" }
     ],
     "usage": [
-      "Открытые пространства: piac, tér, udvar",
+      "Открытые места: piac, tér, udvar",
       "События: koncert, meeting, óra (урок)",
-      "Некоторые учреждения: egyetem, posta, reptér",
+      "Учреждения: egyetem, posta, reptér",
       "Венгрия и её города: Magyarországon, Budapesten, Szegeden",
       "Острова: Máltán, Cipruson"
     ],
-    "markers": [
-      "piac, tér, koncert, meeting, óra, egyetem, posta, reptér"
-    ],
+    "markers": ["Города Венгрии на -j,-m,-n,-ny,-i берут -ban/-ben!"],
     "additionalInfo": {
-      "important": "Венгерские города обычно берут -on/-en/-ön, НО города на -j, -m, -n, -ny, -i берут -ban/-ben (Sopronban, Esztergomban). Исключение: Győrben."
+      "important": "Исключение: Győrben (хотя не на -j,-m,-n,-ny,-i). Мн.ч.+падеж: székeken (на стульях), asztalokon (на столах)."
     }
   },
   "noun_loc_near": {
@@ -477,14 +434,16 @@
     "formulas": [
       { "title": "Задние гласные", "formula": "слово + -nál", "type": "affirmative" },
       { "title": "Передние гласные", "formula": "слово + -nél", "type": "affirmative" },
-      { "title": "Указательные", "formula": "ez → ennél, az → annál", "type": "question" }
+      { "title": "Указательные", "formula": "ez→ennél, az→annál", "type": "question" }
     ],
     "examples": [
-      { "original": "Barátomnál vagyok. / Ügyvédnél vagyok. / A háznál állok.", "translation": "Я у друга. / Я у адвоката. / Я стою у дома.", "type": "affirmative" },
-      { "original": "Ennél az autónál. / Annál az autónál.", "translation": "У этой машины. / У той машины.", "type": "question" }
+      { "original": "A barátomnál vagyok.", "translation": "Я у друга.", "type": "affirmative" },
+      { "original": "Az ügyvédnél vagyok.", "translation": "Я у адвоката.", "type": "affirmative" },
+      { "original": "A háznál állok.", "translation": "Я стою у дома.", "type": "affirmative" },
+      { "original": "Ennél az autónál várok.", "translation": "Я жду у этой машины.", "type": "question" }
     ],
     "usage": [
-      "У человека: barátnál (у друга), orvosnál (у врача)",
+      "У человека: barátomnál (у друга), orvosnál (у врача)",
       "Рядом с предметом: háznál (у дома), autónál (у машины)"
     ],
     "markers": ["Kinél? (У кого?)", "Minél? (У чего?)"]
@@ -492,77 +451,78 @@
   "noun_poss_first": {
     "id": "noun_poss_first",
     "icon": "1️⃣",
-    "title": "Притяжательность: 1-е лицо (мой/моя/моё)",
+    "title": "Моё: притяжательность 1-го лица",
     "subtitle": "Суффиксы: -m, -om, -am, -em, -öm",
     "formulas": [
-      { "title": "Слово на гласную", "formula": "слово + -m", "type": "affirmative" },
-      { "title": "На согласную (задние a,á,o,ó,u,ú)", "formula": "слово + -om / -am", "type": "affirmative" },
-      { "title": "На согласную (передние e,é,i,í)", "formula": "слово + -em", "type": "affirmative" },
-      { "title": "На согласную (округл. ö,ő,ü,ű)", "formula": "слово + -öm", "type": "affirmative" }
+      { "title": "На гласную", "formula": "слово + -m (a→á, e→é)", "type": "affirmative" },
+      { "title": "На согл. (задние)", "formula": "слово + -om / -am", "type": "affirmative" },
+      { "title": "На согл. (передние)", "formula": "слово + -em", "type": "affirmative" },
+      { "title": "На согл. (округл.)", "formula": "слово + -öm", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "körte → körtém, autó → autóm", "translation": "На гласную: просто + m (a→á, e→é)", "type": "affirmative" },
-      { "original": "asztal → asztalom, ház → házam, gyerek → gyerekem", "translation": "На согласную: + соединительная + m", "type": "affirmative" }
+      { "original": "A táskám az asztalon van.", "translation": "Моя сумка на столе.", "type": "affirmative" },
+      { "original": "A házam nagy.", "translation": "Мой дом большой.", "type": "affirmative" },
+      { "original": "A szobámban vagyok.", "translation": "Я в своей комнате. (притяж.+падеж)", "type": "affirmative" },
+      { "original": "Ez az én táskám.", "translation": "Это МОЯ сумка. (с ударением на én)", "type": "affirmative" }
     ],
     "usage": [
       "Личное местоимение (én) обычно опускается",
-      "Используется только при смысловом ударении или противопоставлении",
-      "Падежный суффикс всегда стоит ПОСЛЕ притяжательного: szobámban (в моей комнате)"
+      "Én ставится только при ударении/противопоставлении",
+      "Падеж всегда ПОСЛЕ притяжательного: szobámban (в моей комнате)"
     ],
-    "markers": ["A táskám az asztalon van. (Моя сумка на столе — без én)"],
+    "markers": ["A táskám = моя сумка", "Az én táskám = именно МОЯ сумка"],
     "additionalInfo": {
-      "important": "При противопоставлении: Az én könyvem itt van, a te könyved pedig otthon. (Моя книга здесь, а твоя — дома.)"
+      "important": "При противопоставлении: Az én könyvem itt van, a te könyved pedig otthon. — Моя книга здесь, а твоя — дома."
     }
   },
   "noun_poss_second": {
     "id": "noun_poss_second",
     "icon": "2️⃣",
-    "title": "Притяжательность: 2-е лицо (твой/твоя/твоё)",
+    "title": "Твоё: притяжательность 2-го лица",
     "subtitle": "Суффиксы: -d, -od, -ad, -ed, -öd",
     "formulas": [
-      { "title": "Слово на гласную", "formula": "слово + -d", "type": "affirmative" },
-      { "title": "На согласную (задние)", "formula": "слово + -od / -ad", "type": "affirmative" },
-      { "title": "На согласную (передние)", "formula": "слово + -ed", "type": "affirmative" },
-      { "title": "На согласную (округл.)", "formula": "слово + -öd", "type": "affirmative" }
+      { "title": "На гласную", "formula": "слово + -d (a→á, e→é)", "type": "affirmative" },
+      { "title": "На согл. (задние)", "formula": "слово + -od / -ad", "type": "affirmative" },
+      { "title": "На согл. (передние)", "formula": "слово + -ed", "type": "affirmative" },
+      { "title": "На согл. (округл.)", "formula": "слово + -öd", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "alma → almád, autó → autód", "translation": "На гласную: + d (a→á, e→é)", "type": "affirmative" },
-      { "original": "asztal → asztalod, ház → házad, gyerek → gyereked", "translation": "На согласную: + соединительная + d", "type": "affirmative" }
+      { "original": "A házad szép.", "translation": "Твой дом красивый.", "type": "affirmative" },
+      { "original": "A kertedben ülök.", "translation": "Я сижу в твоём саду. (притяж.+падеж)", "type": "affirmative" },
+      { "original": "Hol van az autód?", "translation": "Где твоя машина?", "type": "affirmative" },
+      { "original": "A te könyved otthon van.", "translation": "Твоя книга дома. (с ударением на te)", "type": "affirmative" }
     ],
     "usage": [
-      "Правила аналогичны 1-му лицу, только конечная буква -d вместо -m",
-      "Падеж всегда в конце: kertedben (в твоём саду)"
+      "Правила как у 1-го лица, только -d вместо -m",
+      "Падеж в конце: kertedben (в твоём саду), házadban (в твоём доме)"
     ],
-    "markers": ["a kertedben (в твоём саду)", "a házadban (в твоём доме)"]
+    "markers": ["almád (твоё яблоко), asztalod (твой стол), gyereked (твой ребёнок)"]
   },
   "noun_poss_third": {
     "id": "noun_poss_third",
     "icon": "3️⃣",
-    "title": "Притяжательность: 3-е лицо (его/её)",
-    "subtitle": "Суффиксы: -a/-e (после согласных), -ja/-je (после гласных и некоторых согласных)",
+    "title": "Его/Её: притяжательность 3-го лица",
+    "subtitle": "Суффиксы: -a/-e или -ja/-je. Порядок: владелец + вещь",
     "formulas": [
-      { "title": "Слово на гласную", "formula": "слово + -ja (задние) / -je (передние)", "type": "affirmative" },
+      { "title": "На гласную", "formula": "слово + -ja (задние) / -je (передние)", "type": "affirmative" },
       { "title": "После -s,-sz,-z,-zs,-c,-cs,-gy,-ny,-ty,-ly,-j", "formula": "слово + -a / -e (без j!)", "type": "affirmative" },
-      { "title": "После других согласных", "formula": "слово + -ja / -je (или -a / -e — смотри в словаре)", "type": "question" }
+      { "title": "После других согласных", "formula": "-ja/-je или -a/-e (смотри в словаре)", "type": "question" }
     ],
     "examples": [
-      { "original": "autó → autója, körte → körtéje", "translation": "На гласную: + ja/je", "type": "affirmative" },
-      { "original": "asztal → asztala, ház → háza, gyerek → gyereke", "translation": "Чаще: + a/e", "type": "affirmative" },
-      { "original": "kert → kertje, barát → barátja, telefon → telefonja", "translation": "Иногда: + ja/je после согласных", "type": "question" }
+      { "original": "Anna asztala nagy.", "translation": "Стол Анны большой. (владелец + вещь)", "type": "affirmative" },
+      { "original": "Artur autója új.", "translation": "Машина Артура новая.", "type": "affirmative" },
+      { "original": "András szobájában vagyok.", "translation": "Я в комнате Андраша. (притяж.+падеж)", "type": "affirmative" },
+      { "original": "Az Ön autója itt van.", "translation": "Ваша машина здесь. (вежливая форма)", "type": "affirmative" }
     ],
     "usage": [
-      "Порядок слов: ВЛАДЕЛЕЦ + ВЕЩЬ(с суффиксом): Artur autója, Anna asztala",
-      "После шипящих и аффрикат (-s,-sz,-z,-zs,-c,-cs,-gy,-ny,-ty,-ly,-j) — без j",
-      "Для остальных согласных точного правила нет — проверяйте в словаре",
-      "Используется также для Ön (Ваш): Az Ön autója (Ваша машина)"
+      "Порядок слов: ВЛАДЕЛЕЦ + ВЕЩЬ(с суффиксом)",
+      "После шипящих/аффрикат — без j: háza, gyereke",
+      "После других — обычно -ja/-je: kertje, barátja, telefonja",
+      "Для Ön (вежл.): то же окончание 3-го лица"
     ],
-    "markers": [
-      "Artur autója (машина Артура)",
-      "Anna asztala (стол Анны)",
-      "András szobájában (в комнате Андраша)"
-    ],
+    "markers": ["Anna asztala", "Artur autója", "András szobájában"],
     "additionalInfo": {
-      "important": "Падеж всегда в самом конце слова: a szobámban (притяж. + падеж). Порядок суффиксов: основа + притяжательный + падежный."
+      "important": "Порядок суффиксов: основа + притяжательный + падежный. Пример: szobájában = szoba + ja (его) + ban (в)."
     }
   },
   "adj_plural_short": {
@@ -575,11 +535,11 @@
       { "title": "На -e", "formula": "-e → -ék", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "laza → lazák (свободные) — A cipőfűzők lazák.", "translation": "Шнурки свободные.", "type": "affirmative" },
-      { "original": "enyhe → enyhék (мягкие) — A telek enyhék.", "translation": "Зимы мягкие.", "type": "affirmative" }
+      { "original": "A cipőfűzők lazák.", "translation": "Шнурки свободные. (laza → lazák)", "type": "affirmative" },
+      { "original": "A telek enyhék.", "translation": "Зимы мягкие. (enyhe → enyhék)", "type": "affirmative" }
     ],
-    "usage": ["Как и у существительных: -a и -e удлиняются перед суффиксом"],
-    "markers": ["laza, drága, enyhe, fekete"]
+    "usage": ["Только в предикативной позиции (после существительного)!"],
+    "markers": ["laza→lazák, enyhe→enyhék, drága→drágák"]
   },
   "adj_plural_long": {
     "id": "adj_plural_long",
@@ -587,81 +547,75 @@
     "title": "Мн.ч. прилагательных на -ú, -ű, -i",
     "subtitle": "Добавляется -ak / -ek",
     "formulas": [
-      { "title": "Задние гласные", "formula": "слово + -ak", "type": "affirmative" },
-      { "title": "Передние гласные", "formula": "слово + -ek", "type": "affirmative" }
+      { "title": "Задние", "formula": "слово + -ak", "type": "affirmative" },
+      { "title": "Передние", "formula": "слово + -ek", "type": "affirmative" }
     ],
     "examples": [
-      { "original": "hosszú → hosszúak (длинные), szomorú → szomorúak (грустные)", "translation": "На -ú: + ak", "type": "affirmative" },
-      { "original": "könnyű → könnyűek (лёгкие), hű → hűek (верные)", "translation": "На -ű: + ek", "type": "affirmative" },
-      { "original": "nyugati → nyugatiak, keleti → keletiek", "translation": "На -i: + ak/ek", "type": "affirmative" }
+      { "original": "A napok hosszúak.", "translation": "Дни длинные. (hosszú → hosszúak)", "type": "affirmative" },
+      { "original": "A feladatok könnyűek.", "translation": "Задания лёгкие. (könnyű → könnyűek)", "type": "affirmative" },
+      { "original": "A fiúk megbízhatóak.", "translation": "Мальчики надёжные. (на -ó: -ak или -k)", "type": "affirmative" }
     ],
     "usage": [
-      "Прилагательные на -ó/-ő допускают ОБА варианта: -ak/-ek ИЛИ просто -k",
-      "megbízhatóak = megbízhatók (надёжные)",
-      "kérkedőek = kérkedők (хвастливые)"
+      "На -ó/-ő допустимы ОБА варианта: megbízhatóak = megbízhatók",
+      "Только после существительного!"
     ],
-    "markers": ["hosszú, szomorú, könnyű, hű, nyugati, keleti"]
+    "markers": ["hosszú→hosszúak, könnyű→könnyűek, nyugati→nyugatiak"]
   },
   "adj_plural_cons": {
     "id": "adj_plural_cons",
     "icon": "🔴",
     "title": "Мн.ч. прилагательных на согласную",
-    "subtitle": "Передние → -ek, Задние → -ak (не -ok!)",
+    "subtitle": "Задние → -ak (НЕ -ok!), Передние → -ek",
     "formulas": [
-      { "title": "Передние гласные", "formula": "слово + -ek", "type": "affirmative" },
-      { "title": "Задние гласные (стандарт)", "formula": "слово + -ak", "type": "affirmative" },
-      { "title": "Задние гласные (исключения)", "formula": "слово + -ok", "type": "question" }
+      { "title": "Передние", "formula": "слово + -ek", "type": "affirmative" },
+      { "title": "Задние (стандарт)", "formula": "слово + -ak", "type": "affirmative" },
+      { "title": "Задние (исключения)", "formula": "слово + -ok", "type": "question" }
     ],
     "examples": [
-      { "original": "szép → szépek, keskeny → keskenyek, ügyes → ügyesek", "translation": "Передние: + ek", "type": "affirmative" },
-      { "original": "magas → magasak, rossz → rosszak, vékony → vékonyak", "translation": "Задние: + ak (стандарт!)", "type": "affirmative" },
-      { "original": "nagy → nagyok, vastag → vastagok, boldog → boldogok", "translation": "Исключения: + ok", "type": "question" }
+      { "original": "A lányok szépek.", "translation": "Девушки красивые. (szép → szépek)", "type": "affirmative" },
+      { "original": "A fák magasak.", "translation": "Деревья высокие. (magas → magasak)", "type": "affirmative" },
+      { "original": "A házak nagyok.", "translation": "Дома большие. (nagy → nagyok — исключение!)", "type": "question" },
+      { "original": "Én nagy vagyok. Mi nagyok vagyunk.", "translation": "Я высокий. Мы высокие. (с lenni)", "type": "affirmative" }
     ],
     "usage": [
-      "Главное отличие от существительных: для задних гласных стандарт -ak, а не -ok!",
-      "Исключения с -ok нужно запомнить: nagy, vastag, boldog, bolond",
-      "Прилагательное изменяется ТОЛЬКО в предикативной позиции (после существительного)"
+      "Главное отличие от сущ.: задние → -ak (не -ok!)",
+      "Исключения с -ok: nagy, vastag, boldog, bolond",
+      "До сущ-ного прилаг. НЕ меняется: nagy ház → nagy házak"
     ],
-    "markers": [
-      "До сущ-ного: nagy ház → nagy házak (прилаг. НЕ меняется!)",
-      "После сущ-ного: A ház nagy. → A házak nagyok."
-    ],
+    "markers": ["nagy ház → nagy házak (прил. не меняется!)", "A ház nagy. → A házak nagyok. (меняется!)"],
     "additionalInfo": {
-      "important": "Ключевое правило позиции: nagy ház (большой дом) → nagy házak (большие дома) — прилагательное НЕ изменилось! Но: A ház nagy. → A házak nagyok. — изменилось!"
+      "important": "С глаголом lenni: Én nagy vagyok / Te nagy vagy / Ő nagy (без van!) / Mi nagyok vagyunk / Ti nagyok vagytok / Ők nagyok (без vannak, если «какие»). Но: Ő otthon van (van нужен — ответ на «где»)."
     },
     "comparison": [
-      {
-        "title": "Существительные vs Прилагательные (задние гласные)",
-        "first": "Сущ-ные: asztal → asztalok (стандарт -ok)",
-        "second": "Прил-ные: magas → magasak (стандарт -ak!)"
-      }
+      { "title": "Сущ. vs Прил. (задние гласные)", "first": "Сущ: asztal→asztalok (стандарт -ok)", "second": "Прил: magas→magasak (стандарт -ak!)" }
     ]
   },
   "adj_position": {
     "id": "adj_position",
     "icon": "📐",
-    "title": "Позиция прилагательного в предложении",
-    "subtitle": "До или после существительного — разные правила",
+    "title": "Позиция прилагательного",
+    "subtitle": "До существительного — не меняется, после — меняется",
     "formulas": [
-      { "title": "Атрибутивная (до сущ-ного)", "formula": "прил. + сущ. — прилагательное НЕ изменяется", "type": "affirmative" },
-      { "title": "Предикативная (после сущ-ного)", "formula": "сущ. + прил. — прилагательное изменяется", "type": "question" }
+      { "title": "До сущ-ного (определение)", "formula": "прил. + сущ. — прилагательное НЕ изменяется", "type": "affirmative" },
+      { "title": "После сущ-ного (сказуемое)", "formula": "сущ. + прил.(+суффикс) — прилагательное изменяется", "type": "question" }
     ],
     "examples": [
-      { "original": "nagy ház → nagy házak → nagy házat → nagy házban", "translation": "До: прилагательное всегда nagy (не меняется)", "type": "affirmative" },
-      { "original": "A ház nagy. → A házak nagyok. (Дома большие.)", "translation": "После: прилагательное получает мн.ч.", "type": "question" }
+      { "original": "Szép ház. → Szép házak.", "translation": "Красивый дом → Красивые дома (прил. не меняется!)", "type": "affirmative" },
+      { "original": "A ház szép. → A házak szépek.", "translation": "Дом красивый → Дома красивые (прил. меняется!)", "type": "question" },
+      { "original": "Ő szép.", "translation": "Она красивая. (3-е лицо — без van!)", "type": "question" },
+      { "original": "Ő otthon van.", "translation": "Он дома. (van нужен — ответ на Где?)", "type": "question" }
     ],
     "usage": [
-      "До существительного (определение): никогда не изменяется — ни по числам, ни по падежам",
-      "После существительного (сказуемое): изменяется по числам и падежам",
-      "С глаголом lenni: Én nagy vagyok / Te nagy vagy / Ő nagy / Mi nagyok vagyunk"
+      "До сущ.: никогда не изменяется — ни число, ни падеж",
+      "После сущ.: изменяется (szépek, nagyok, magasak)",
+      "С lenni: Én szép vagyok / Te szép vagy / Ő szép (без van!)"
     ],
     "markers": [
-      "Én vagyok, Te vagy, Ő van (нулевое — опускается!)",
-      "Mi vagyunk, Ti vagytok, Ők vannak",
+      "vagyok, vagy, van (опуск.!), vagyunk, vagytok, vannak (опуск.!)",
       "nem + van = nincs, nem + vannak = nincsenek"
     ],
     "additionalInfo": {
-      "important": "В 3-м лице van/vannak ОПУСКАЕТСЯ, если предложение отвечает на вопрос Какой?/Кто?/Что?: Ő szép. (Она красивая — без van!). Но: Ő otthon van. (Он дома — van нужен, т.к. отвечает на Где?)."
+      "important": "van/vannak ОПУСКАЕТСЯ когда предложение отвечает на Какой?/Кто?/Что? → Ő szép. Ő tanár. Но СТАВИТСЯ на другие вопросы → Ő otthon van. Ő nincs itt."
     }
   }
 }
