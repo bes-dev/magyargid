@@ -1,179 +1,39 @@
 [
-  {
-    "stepId": "step1",
-    "choice": "verb",
-    "nextStep": "step2_verb"
-  },
-  {
-    "stepId": "step1",
-    "choice": "noun",
-    "nextStep": "step2_noun"
-  },
-  {
-    "stepId": "step1",
-    "choice": "adjective",
-    "nextStep": "step2_adj"
-  },
-  {
-    "stepId": "step2_verb",
-    "choice": "conjugate",
-    "nextStep": "step3_verb_type"
-  },
-  {
-    "stepId": "step2_verb",
-    "choice": "infinitive",
-    "saveResult": "infinitive",
-    "resultId": "infinitive"
-  },
-  {
-    "stepId": "step2_noun",
-    "choice": "plural",
-    "nextStep": "step3_noun_ending"
-  },
-  {
-    "stepId": "step2_noun",
-    "choice": "accusative",
-    "nextStep": "step3_noun_acc_ending"
-  },
-  {
-    "stepId": "step2_noun",
-    "choice": "locative",
-    "nextStep": "step3_noun_loc_type"
-  },
-  {
-    "stepId": "step2_noun",
-    "choice": "possessive",
-    "nextStep": "step3_noun_poss_person"
-  },
-  {
-    "stepId": "step2_adj",
-    "choice": "plural",
-    "nextStep": "step3_adj_ending"
-  },
-  {
-    "stepId": "step2_adj",
-    "choice": "position",
-    "saveResult": "adj_position",
-    "resultId": "adj_position"
-  },
-  {
-    "stepId": "step3_verb_type",
-    "choice": "regular",
-    "saveResult": "verb_regular",
-    "resultId": "verb_regular"
-  },
-  {
-    "stepId": "step3_verb_type",
-    "choice": "sibilant",
-    "saveResult": "verb_sibilant",
-    "resultId": "verb_sibilant"
-  },
-  {
-    "stepId": "step3_verb_type",
-    "choice": "ik",
-    "saveResult": "verb_ik",
-    "resultId": "verb_ik"
-  },
-  {
-    "stepId": "step3_verb_type",
-    "choice": "linking",
-    "saveResult": "verb_linking",
-    "resultId": "verb_linking"
-  },
-  {
-    "stepId": "step3_noun_ending",
-    "choice": "vowel",
-    "saveResult": "noun_plural_vowel",
-    "resultId": "noun_plural_vowel"
-  },
-  {
-    "stepId": "step3_noun_ending",
-    "choice": "cons_back",
-    "saveResult": "noun_plural_back",
-    "resultId": "noun_plural_back"
-  },
-  {
-    "stepId": "step3_noun_ending",
-    "choice": "cons_front",
-    "saveResult": "noun_plural_front",
-    "resultId": "noun_plural_front"
-  },
-  {
-    "stepId": "step3_noun_ending",
-    "choice": "cons_front_round",
-    "saveResult": "noun_plural_front_round",
-    "resultId": "noun_plural_front_round"
-  },
-  {
-    "stepId": "step3_noun_acc_ending",
-    "choice": "vowel",
-    "saveResult": "noun_acc_vowel",
-    "resultId": "noun_acc_vowel"
-  },
-  {
-    "stepId": "step3_noun_acc_ending",
-    "choice": "special_cons",
-    "saveResult": "noun_acc_special",
-    "resultId": "noun_acc_special"
-  },
-  {
-    "stepId": "step3_noun_acc_ending",
-    "choice": "other_cons",
-    "saveResult": "noun_acc_other",
-    "resultId": "noun_acc_other"
-  },
-  {
-    "stepId": "step3_noun_loc_type",
-    "choice": "inside",
-    "saveResult": "noun_loc_inside",
-    "resultId": "noun_loc_inside"
-  },
-  {
-    "stepId": "step3_noun_loc_type",
-    "choice": "surface",
-    "saveResult": "noun_loc_surface",
-    "resultId": "noun_loc_surface"
-  },
-  {
-    "stepId": "step3_noun_loc_type",
-    "choice": "near",
-    "saveResult": "noun_loc_near",
-    "resultId": "noun_loc_near"
-  },
-  {
-    "stepId": "step3_noun_poss_person",
-    "choice": "first",
-    "saveResult": "noun_poss_first",
-    "resultId": "noun_poss_first"
-  },
-  {
-    "stepId": "step3_noun_poss_person",
-    "choice": "second",
-    "saveResult": "noun_poss_second",
-    "resultId": "noun_poss_second"
-  },
-  {
-    "stepId": "step3_noun_poss_person",
-    "choice": "third",
-    "saveResult": "noun_poss_third",
-    "resultId": "noun_poss_third"
-  },
-  {
-    "stepId": "step3_adj_ending",
-    "choice": "vowel_short",
-    "saveResult": "adj_plural_short",
-    "resultId": "adj_plural_short"
-  },
-  {
-    "stepId": "step3_adj_ending",
-    "choice": "vowel_long",
-    "saveResult": "adj_plural_long",
-    "resultId": "adj_plural_long"
-  },
-  {
-    "stepId": "step3_adj_ending",
-    "choice": "consonant",
-    "saveResult": "adj_plural_cons",
-    "resultId": "adj_plural_cons"
-  }
+  { "stepId": "step1", "choice": "action", "nextStep": "step2_action" },
+  { "stepId": "step1", "choice": "location", "nextStep": "step2_location" },
+  { "stepId": "step1", "choice": "possession", "nextStep": "step2_possession" },
+  { "stepId": "step1", "choice": "object", "nextStep": "step2_object" },
+  { "stepId": "step1", "choice": "plural", "nextStep": "step2_plural" },
+
+  { "stepId": "step2_action", "choice": "conjugate", "nextStep": "step3_verb_type" },
+  { "stepId": "step2_action", "choice": "infinitive", "saveResult": "infinitive", "resultId": "infinitive" },
+
+  { "stepId": "step2_location", "choice": "inside", "saveResult": "noun_loc_inside", "resultId": "noun_loc_inside" },
+  { "stepId": "step2_location", "choice": "surface", "saveResult": "noun_loc_surface", "resultId": "noun_loc_surface" },
+  { "stepId": "step2_location", "choice": "near", "saveResult": "noun_loc_near", "resultId": "noun_loc_near" },
+
+  { "stepId": "step2_possession", "choice": "first", "saveResult": "noun_poss_first", "resultId": "noun_poss_first" },
+  { "stepId": "step2_possession", "choice": "second", "saveResult": "noun_poss_second", "resultId": "noun_poss_second" },
+  { "stepId": "step2_possession", "choice": "third", "saveResult": "noun_poss_third", "resultId": "noun_poss_third" },
+
+  { "stepId": "step2_object", "choice": "vowel", "saveResult": "noun_acc_vowel", "resultId": "noun_acc_vowel" },
+  { "stepId": "step2_object", "choice": "special_cons", "saveResult": "noun_acc_special", "resultId": "noun_acc_special" },
+  { "stepId": "step2_object", "choice": "other_cons", "saveResult": "noun_acc_other", "resultId": "noun_acc_other" },
+
+  { "stepId": "step2_plural", "choice": "noun", "nextStep": "step3_noun_ending" },
+  { "stepId": "step2_plural", "choice": "adjective", "nextStep": "step3_adj_ending" },
+
+  { "stepId": "step3_verb_type", "choice": "regular", "saveResult": "verb_regular", "resultId": "verb_regular" },
+  { "stepId": "step3_verb_type", "choice": "sibilant", "saveResult": "verb_sibilant", "resultId": "verb_sibilant" },
+  { "stepId": "step3_verb_type", "choice": "ik", "saveResult": "verb_ik", "resultId": "verb_ik" },
+  { "stepId": "step3_verb_type", "choice": "linking", "saveResult": "verb_linking", "resultId": "verb_linking" },
+
+  { "stepId": "step3_noun_ending", "choice": "vowel", "saveResult": "noun_plural_vowel", "resultId": "noun_plural_vowel" },
+  { "stepId": "step3_noun_ending", "choice": "cons_back", "saveResult": "noun_plural_back", "resultId": "noun_plural_back" },
+  { "stepId": "step3_noun_ending", "choice": "cons_front", "saveResult": "noun_plural_front", "resultId": "noun_plural_front" },
+  { "stepId": "step3_noun_ending", "choice": "cons_front_round", "saveResult": "noun_plural_front_round", "resultId": "noun_plural_front_round" },
+
+  { "stepId": "step3_adj_ending", "choice": "vowel_short", "saveResult": "adj_plural_short", "resultId": "adj_plural_short" },
+  { "stepId": "step3_adj_ending", "choice": "vowel_long", "saveResult": "adj_plural_long", "resultId": "adj_plural_long" },
+  { "stepId": "step3_adj_ending", "choice": "consonant", "saveResult": "adj_plural_cons", "resultId": "adj_plural_cons" }
 ]

@@ -72,9 +72,9 @@ class StepView extends BaseView {
         // Определяем 6 фиксированных шагов в соответствии с дизайном
         const fixedSteps = [
             { label: "Начало", id: "start" },
-            { label: "Часть речи", id: "step1" },
-            { label: "Действие", id: "step2" },
-            { label: "Тип", id: "step3" },
+            { label: "Намерение", id: "step1" },
+            { label: "Уточнение", id: "step2" },
+            { label: "Детали", id: "step3" },
             { label: "Результат", id: "result" }
         ];
         

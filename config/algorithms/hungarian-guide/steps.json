@@ -1,269 +1,247 @@
 [
   {
     "id": "step1",
-    "label": "Частина мови",
-    "title": "Какую часть речи вы хотите изменить?",
-    "hint": "Венгерский язык — агглютинативный: суффиксы добавляются один за другим. Выберите часть речи, чтобы узнать правила.",
+    "label": "Намерение",
+    "title": "Что вы хотите выразить?",
+    "hint": "Выберите ситуацию, которая ближе всего к тому, что вы хотите сказать по-венгерски. Алгоритм подскажет, какие суффиксы и правила использовать.",
     "options": [
       {
-        "value": "verb",
+        "value": "action",
         "icon": "🏃",
-        "title": "Глагол (Ige)",
-        "description": "Спряжение, инфинитив",
-        "hint": "В венгерском языке глаголы спрягаются по лицам и числам. Есть три группы: <strong>обычные</strong>, <strong>-s/-z/-sz</strong> и <strong>-ik</strong> глаголы."
+        "title": "Кто-то совершает действие",
+        "description": "Я рисую. Ты работаешь. Она читает.",
+        "hint": "Вы хотите сказать, что кто-то что-то <strong>делает</strong>. В венгерском глагол спрягается по лицам — окончание глагола уже говорит, кто совершает действие.<div class=\"example\">rajzol<strong>ok</strong> = Я рисую<br>rajzol<strong>sz</strong> = Ты рисуешь<br>rajzol = Он/она рисует</div>"
       },
       {
-        "value": "noun",
-        "icon": "📦",
-        "title": "Существительное (Főnév)",
-        "description": "Падежи, множественное число, притяжательность",
-        "hint": "Существительные получают суффиксы для множественного числа (<strong>-k</strong>), падежей (<strong>-t</strong>, <strong>-ban</strong>...) и притяжательности (<strong>-m</strong>, <strong>-d</strong>...). Порядок: основа + мн.ч. + притяж. + падеж."
+        "value": "location",
+        "icon": "📍",
+        "title": "Кто-то/что-то находится где-то",
+        "description": "Я в магазине. Он на рынке. Она у друга.",
+        "hint": "Вы хотите сказать, <strong>где</strong> находится человек или предмет. В венгерском для этого к названию места добавляется суффикс: <strong>-ban/-ben</strong> (внутри), <strong>-on/-en/-ön</strong> (на поверхности), <strong>-nál/-nél</strong> (у/рядом).<div class=\"example\">A bolt<strong>ban</strong> vagyok. = Я в магазине.<br>Budapest<strong>en</strong> élek. = Я живу в Будапеште.<br>A barátom<strong>nál</strong> vagyok. = Я у друга.</div>"
       },
       {
-        "value": "adjective",
-        "icon": "🎨",
-        "title": "Прилагательное (Melléknév)",
-        "description": "Множественное число, позиция в предложении",
-        "hint": "Прилагательные изменяются по числам только когда стоят <strong>после</strong> существительного (предикативно). Перед существительным они <strong>не изменяются</strong>."
+        "value": "possession",
+        "icon": "👤",
+        "title": "Что-то принадлежит кому-то",
+        "description": "Мой дом. Твоя книга. Машина Анны.",
+        "hint": "Вы хотите сказать, что вещь <strong>принадлежит</strong> кому-то. В венгерском «мой/твой/его» выражается суффиксом на самом предмете, а не отдельным словом.<div class=\"example\">ház<strong>am</strong> = мой дом<br>ház<strong>ad</strong> = твой дом<br>ház<strong>a</strong> = его/её дом</div>"
+      },
+      {
+        "value": "object",
+        "icon": "🎯",
+        "title": "Действие направлено на кого-то/что-то",
+        "description": "Я вижу стол. Прошу кофе. Люблю яблоки.",
+        "hint": "Вы хотите сказать, на <strong>кого</strong> или <strong>что</strong> направлено действие (прямой объект). В венгерском к объекту добавляется суффикс <strong>-t</strong>.<div class=\"example\">Látom az asztal<strong>t</strong>. = Я вижу стол.<br>Kérek egy kávé<strong>t</strong>. = Прошу кофе.<br>Szeretem az almá<strong>t</strong>. = Люблю яблоко.</div>"
+      },
+      {
+        "value": "plural",
+        "icon": "👥",
+        "title": "Говорю о нескольких предметах",
+        "description": "Столы. Дома. Дома большие.",
+        "hint": "Вы хотите сказать, что предметов <strong>несколько</strong>. В венгерском множественное число образуется суффиксом <strong>-k</strong>. Но внимание: после числительных множественное число <strong>не ставится</strong>!<div class=\"example\">asztal → asztal<strong>ok</strong> = столы<br>ház → ház<strong>ak</strong> = дома<br>НО: hat asztal = шесть столов (без -ok!)</div>"
       }
     ]
   },
   {
-    "id": "step2_verb",
-    "label": "Действие",
-    "title": "Что нужно сделать с глаголом?",
-    "hint": "Выберите, какую форму глагола вы хотите получить.",
+    "id": "step2_action",
+    "label": "Форма",
+    "title": "Какая форма глагола вам нужна?",
+    "hint": "Выберите, хотите ли вы использовать глагол в спрягаемой форме (я делаю, ты делаешь...) или в инфинитиве (делать).",
     "options": [
       {
         "value": "conjugate",
         "icon": "🔄",
-        "title": "Проспрягать (настоящее время)",
-        "description": "Безобъектное спряжение по лицам и числам",
-        "hint": "Безобъектное (неопределённое) спряжение используется, когда нет определённого прямого дополнения. Окончания зависят от <strong>типа глагола</strong> и <strong>гармонии гласных</strong>."
+        "title": "Спрягаемая: я делаю, ты делаешь, он делает...",
+        "description": "Rajzolok. Dolgozol. Tanít.",
+        "hint": "Безобъектное (неопределённое) спряжение в настоящем времени. Окончание глагола зависит от <strong>лица</strong> (кто делает) и <strong>типа глагола</strong> (на что заканчивается основа)."
       },
       {
         "value": "infinitive",
         "icon": "📝",
-        "title": "Образовать инфинитив (-ni)",
-        "description": "Неопределённая форма глагола",
-        "hint": "Инфинитив образуется добавлением суффикса <strong>-ni</strong> к основе глагола. Если основа заканчивается на два согласных — добавляется соединительная гласная <strong>-a-</strong> или <strong>-e-</strong>."
+        "title": "Инфинитив: делать, работать, читать...",
+        "description": "Rajzolni. Dolgozni. Tanítani.",
+        "hint": "Неопределённая форма глагола — отвечает на вопрос <strong>Что делать?</strong> (Mit csinálni?). Образуется суффиксом <strong>-ni</strong>."
       }
     ]
   },
   {
-    "id": "step2_noun",
-    "label": "Действие",
-    "title": "Что нужно сделать с существительным?",
-    "hint": "Венгерские существительные изменяются с помощью суффиксов. Суффиксы всегда подчиняются гармонии гласных.",
+    "id": "step2_location",
+    "label": "Отношение",
+    "title": "Как именно расположен предмет/человек?",
+    "hint": "В венгерском для каждого типа расположения используется свой суффикс. Подумайте, по-русски вы бы сказали «в чём-то», «на чём-то» или «у кого-то».",
     "options": [
       {
-        "value": "plural",
-        "icon": "👥",
-        "title": "Множественное число (-k)",
-        "description": "Образовать форму множественного числа",
-        "hint": "Множественное число образуется суффиксом <strong>-k</strong> с соединительными гласными по гармонии гласных. <div class=\"example\"><strong>Важно:</strong> после числительных существительное остаётся в единственном числе! <em>hat alma</em> (шесть яблок)</div>"
+        "value": "inside",
+        "icon": "🏠",
+        "title": "Внутри чего-то",
+        "description": "В магазине. В Австрии. В парке. В сумке.",
+        "hint": "Суффикс <strong>-ban / -ben</strong>. Используется со зданиями, закрытыми пространствами, странами и городами за пределами Венгрии.<div class=\"example\">A bolt<strong>ban</strong> vagyok. = Я в магазине.<br>Ausztriá<strong>ban</strong> lakom. = Я живу в Австрии.</div><div class=\"example\">Подсказка: если по-русски вы говорите <strong>«в»</strong>, скорее всего нужен -ban/-ben.</div>"
       },
       {
-        "value": "accusative",
-        "icon": "🎯",
-        "title": "Винительный падеж (-t)",
-        "description": "Кого? Что? (Kit? Mit?)",
-        "hint": "Винительный падеж — прямое дополнение. Суффикс <strong>-t</strong> добавляется напрямую или через соединительную гласную в зависимости от окончания слова."
+        "value": "surface",
+        "icon": "🏔️",
+        "title": "На поверхности / на мероприятии",
+        "description": "На рынке. На концерте. В Будапеште. На Мальте.",
+        "hint": "Суффикс <strong>-n / -on / -en / -ön</strong>. Используется для открытых пространств, событий, поверхностей, а также для Венгрии и её городов.<div class=\"example\">A piac<strong>on</strong> vagyok. = Я на рынке.<br>Budapest<strong>en</strong> élek. = Я живу в Будапеште.<br>Magyarország<strong>on</strong> = В Венгрии</div>"
       },
       {
-        "value": "locative",
-        "icon": "📍",
-        "title": "Падеж местонахождения (Hol?)",
-        "description": "Где? В/На/У чего-то",
-        "hint": "Для выражения местоположения используются три группы суффиксов: <strong>-ban/-ben</strong> (в), <strong>-on/-en/-ön</strong> (на), <strong>-nál/-nél</strong> (у)."
-      },
-      {
-        "value": "possessive",
-        "icon": "👤",
-        "title": "Притяжательная конструкция",
-        "description": "Мой, твой, его/её...",
-        "hint": "Принадлежность выражается притяжательными суффиксами, которые добавляются к существительному. Личное местоимение обычно <strong>опускается</strong>, если нет смыслового ударения."
+        "value": "near",
+        "icon": "🤝",
+        "title": "У кого-то / рядом с чем-то",
+        "description": "У друга. У врача. Рядом с домом.",
+        "hint": "Суффикс <strong>-nál / -nél</strong>. Используется, когда вы находитесь <strong>у кого-то</strong> (в гостях, на приёме) или <strong>рядом</strong> с предметом.<div class=\"example\">A barátom<strong>nál</strong> vagyok. = Я у друга.<br>Az orvos<strong>nál</strong> vagyok. = Я у врача.<br>A ház<strong>nál</strong> állok. = Я стою у дома.</div>"
       }
     ]
   },
   {
-    "id": "step2_adj",
-    "label": "Действие",
-    "title": "Что нужно узнать о прилагательном?",
-    "hint": "В венгерском языке прилагательные ведут себя по-разному в зависимости от позиции в предложении.",
+    "id": "step2_possession",
+    "label": "Владелец",
+    "title": "Чья это вещь?",
+    "hint": "В венгерском «мой/твой/его» выражается суффиксом на предмете. Личное местоимение (én, te, ő) обычно опускается, если нет акцента.",
     "options": [
       {
-        "value": "plural",
-        "icon": "👥",
-        "title": "Множественное число",
-        "description": "Когда прилагательное стоит после существительного",
-        "hint": "Прилагательные изменяются по числам <strong>только в предикативной позиции</strong> (после существительного). Перед существительным не изменяются: <em>nagy házak</em> (большие дома), но <em>A házak nagyok</em> (Дома большие)."
+        "value": "first",
+        "icon": "1️⃣",
+        "title": "Моя / Мой / Моё",
+        "description": "Мой дом. Моя груша. Моя комната.",
+        "hint": "Суффикс <strong>-m</strong> (после гласной) или <strong>-om/-am/-em/-öm</strong> (после согласной, по гармонии гласных).<div class=\"example\">körté<strong>m</strong> = моя груша<br>asztal<strong>om</strong> = мой стол<br>ház<strong>am</strong> = мой дом<br>gyerek<strong>em</strong> = мой ребёнок</div>"
       },
       {
-        "value": "position",
-        "icon": "📐",
-        "title": "Позиция в предложении",
-        "description": "Когда изменяется, а когда нет",
-        "hint": "Ключевое правило: <strong>до существительного</strong> — не изменяется, <strong>после существительного</strong> (предикативно) — изменяется по падежам и числам."
+        "value": "second",
+        "icon": "2️⃣",
+        "title": "Твоя / Твой / Твоё",
+        "description": "Твоё яблоко. Твой стол. Твой сад.",
+        "hint": "Суффикс <strong>-d</strong> (после гласной) или <strong>-od/-ad/-ed/-öd</strong> (после согласной, по гармонии гласных).<div class=\"example\">almá<strong>d</strong> = твоё яблоко<br>asztal<strong>od</strong> = твой стол<br>kert<strong>ed</strong> = твой сад</div>"
+      },
+      {
+        "value": "third",
+        "icon": "3️⃣",
+        "title": "Его / Её / Чья-то",
+        "description": "Его машина. Стол Анны. Комната Андраша.",
+        "hint": "Суффикс <strong>-ja/-je</strong> (после гласных) или <strong>-a/-e</strong> (после большинства согласных). Порядок слов: <strong>владелец + вещь</strong>.<div class=\"example\">autó<strong>ja</strong> = его/её машина<br>asztal<strong>a</strong> = его/её стол<br>Anna asztal<strong>a</strong> = стол Анны</div>"
+      }
+    ]
+  },
+  {
+    "id": "step2_object",
+    "label": "Окончание",
+    "title": "На что заканчивается слово-объект?",
+    "hint": "Суффикс винительного падежа <strong>-t</strong> добавляется к прямому объекту. Способ присоединения зависит от последней буквы слова.",
+    "options": [
+      {
+        "value": "vowel",
+        "icon": "🔵",
+        "title": "На гласную букву",
+        "description": "virsli, sonka, körte, túró, autó...",
+        "hint": "Суффикс <strong>-t</strong> добавляется напрямую. Если слово на <strong>-a/-e</strong>, они удлиняются в <strong>-á/-é</strong>.<div class=\"example\">virsli → virsli<strong>t</strong><br>sonka → sonká<strong>t</strong><br>körte → körté<strong>t</strong></div>"
+      },
+      {
+        "value": "special_cons",
+        "icon": "🟡",
+        "title": "На -l, -ly, -j, -n, -ny, -r, -s, -sz, -z",
+        "description": "asztal, banán, lány, zsír, tojás...",
+        "hint": "Обычно <strong>-t</strong> без соединительной гласной. Но есть исключения!<div class=\"example\">asztal → asztal<strong>t</strong> | banán → banán<strong>t</strong></div><div class=\"example\"><strong>Исключения:</strong> tej → tej<strong>et</strong>, vaj → vaj<strong>at</strong>, méz → méz<strong>et</strong>, kenyér → kenyer<strong>et</strong>, madár → madar<strong>at</strong></div>"
+      },
+      {
+        "value": "other_cons",
+        "icon": "🔴",
+        "title": "На другую согласную букву",
+        "description": "bolt, könyv, gyümölcs, dolog...",
+        "hint": "Добавляется соединительная гласная + <strong>t</strong> по гармонии гласных.<div class=\"example\">bolt → bolt<strong>ot</strong> (задние)<br>zöldség → zöldség<strong>et</strong> (передние)<br>gyümölcs → gyümölcs<strong>öt</strong> (округлённые)</div>"
+      }
+    ]
+  },
+  {
+    "id": "step2_plural",
+    "label": "Что именно",
+    "title": "Что вы ставите во множественное число?",
+    "hint": "Правила множественного числа для существительных и прилагательных немного отличаются.",
+    "options": [
+      {
+        "value": "noun",
+        "icon": "📦",
+        "title": "Предмет / существительное",
+        "description": "столы, дома, книги, люди...",
+        "hint": "Множественное число существительных образуется суффиксом <strong>-k</strong> с соединительными гласными по гармонии гласных.<div class=\"example\">asztal → asztal<strong>ok</strong><br>ember → ember<strong>ek</strong><br>mérnök → mérnök<strong>ök</strong></div>"
+      },
+      {
+        "value": "adjective",
+        "icon": "🎨",
+        "title": "Свойство / прилагательное",
+        "description": "Дома большие. Задания лёгкие.",
+        "hint": "Прилагательные изменяются <strong>только после существительного</strong> (в сказуемом). Перед существительным — никогда!<div class=\"example\">nagy ház → nagy ház<strong>ak</strong> (прил. НЕ меняется!)<br>A ház nagy. → A házak nagy<strong>ok</strong>. (прил. меняется!)</div>"
       }
     ]
   },
   {
     "id": "step3_verb_type",
     "label": "Тип глагола",
-    "title": "К какому типу относится ваш глагол?",
-    "hint": "В венгерском три группы глаголов с разными окончаниями для 2-го лица единственного числа (Te). Тип определяется по последним буквам основы.",
+    "title": "Как выглядит ваш глагол?",
+    "hint": "Посмотрите на свой глагол и выберите подходящий тип. Если не уверены — найдите глагол в словаре: если он дан в форме на -ik, это -ik глагол.",
     "options": [
       {
         "value": "regular",
         "icon": "📊",
-        "title": "Обычный глагол",
-        "description": "Основа не заканчивается на -s/-z/-sz/-ik",
-        "hint": "Обычные глаголы — самая большая группа. Во 2-м лице (Te) окончание <strong>-sz</strong>.<div class=\"example\">rajzol → rajzol<strong>sz</strong><br>szeret → szeret<strong>sz</strong></div>"
+        "title": "Обычный",
+        "description": "rajzol, szeret, ül, tanul, ír, él...",
+        "hint": "Основа не заканчивается на -s/-z/-sz и глагол не -ik. Это самая большая группа.<div class=\"example\">rajzol<strong>ok</strong>, rajzol<strong>sz</strong>, rajzol, rajzol<strong>unk</strong>, rajzol<strong>tok</strong>, rajzol<strong>nak</strong></div>"
       },
       {
         "value": "sibilant",
         "icon": "🐍",
-        "title": "-s / -z / -sz глагол",
-        "description": "Основа заканчивается на -s, -z или -sz",
-        "hint": "Шипящие глаголы во 2-м лице (Te) получают окончание <strong>-ol/-el/-öl</strong> вместо -sz.<div class=\"example\">keres → keres<strong>el</strong><br>olvas → olvas<strong>ol</strong></div>"
+        "title": "Заканчивается на -s, -z или -sz",
+        "description": "keres, olvas, néz, főz, tesz...",
+        "hint": "Единственное отличие: во 2-м лице (ты) окончание <strong>-ol/-el/-öl</strong> вместо -sz.<div class=\"example\">keresek, keres<strong>el</strong>, keres, keresünk, kerestek, keresnek</div>"
       },
       {
         "value": "ik",
         "icon": "⭐",
-        "title": "-ik глагол",
-        "description": "В словаре даётся в форме на -ik (3-е лицо)",
-        "hint": "Глаголы на -ik в 3-м лице имеют окончание <strong>-ik</strong>. В 1-м лице можно использовать как <strong>-ok/-ek/-ök</strong>, так и <strong>-om/-em/-öm</strong>.<div class=\"example\">dolgoz<strong>ik</strong> → dolgoz<strong>om</strong>/dolgoz<strong>ok</strong></div>"
+        "title": "В словаре на -ik",
+        "description": "dolgozik, lakik, eszik, alszik, utazik...",
+        "hint": "В 3-м лице окончание <strong>-ik</strong>. В 1-м лице можно <strong>-om/-em/-öm</strong> или <strong>-ok/-ek/-ök</strong>.<div class=\"example\">dolgoz<strong>om</strong>, dolgozol, dolgoz<strong>ik</strong>, dolgozunk, dolgoztok, dolgoznak</div>"
       },
       {
         "value": "linking",
         "icon": "🔗",
-        "title": "С соединительной гласной",
-        "description": "Основа на 2 согласные или долгую гласную + t",
-        "hint": "Если основа заканчивается на две согласные или долгую гласную + t, перед окончаниями на согласную добавляется соединительная гласная.<div class=\"example\">tanít → tanít<strong>a</strong>sz, tanít<strong>a</strong>nak<br>küld → küld<strong>e</strong>sz, küld<strong>e</strong>nek</div>"
+        "title": "Основа на 2 согласные или долгую гласную + t",
+        "description": "tanít, fest, küld, mond, tart...",
+        "hint": "Добавляется соединительная гласная, чтобы избежать трёх согласных подряд.<div class=\"example\">tanítok, tanít<strong>a</strong>sz, tanít, tanítunk, tanít<strong>o</strong>tok, tanít<strong>a</strong>nak</div>"
       }
     ]
   },
   {
     "id": "step3_noun_ending",
-    "label": "Окончание слова",
-    "title": "На что заканчивается существительное?",
-    "hint": "Правила образования множественного числа зависят от последней буквы слова и гармонии гласных.",
+    "label": "Окончание",
+    "title": "На что заканчивается слово?",
+    "hint": "Суффикс множественного числа <strong>-k</strong> присоединяется по-разному в зависимости от последней буквы слова и гармонии гласных.",
     "options": [
       {
         "value": "vowel",
         "icon": "🔵",
-        "title": "На гласную",
+        "title": "На гласную букву",
         "description": "alma, körte, autó, fiú, nő...",
-        "hint": "Суффикс <strong>-k</strong> добавляется напрямую. Если последняя гласная <strong>-a</strong> или <strong>-e</strong>, она удлиняется в <strong>-á</strong> / <strong>-é</strong>.<div class=\"example\">alma → almá<strong>k</strong><br>autó → autó<strong>k</strong><br>körte → körté<strong>k</strong></div>"
+        "hint": "Суффикс <strong>-k</strong> добавляется напрямую. Если последняя <strong>-a</strong> или <strong>-e</strong>, она удлиняется.<div class=\"example\">alma → almá<strong>k</strong><br>autó → autó<strong>k</strong><br>körte → körté<strong>k</strong></div>"
       },
       {
         "value": "cons_back",
         "icon": "🟠",
-        "title": "На согласную (задние гласные)",
-        "description": "Слово содержит a, á, o, ó, u, ú",
-        "hint": "Добавляется <strong>-ok</strong> (стандартно) или <strong>-ak</strong> (для некоторых слов — исключения).<div class=\"example\">asztal → asztal<strong>ok</strong><br>barát → barát<strong>ok</strong><br>ház → ház<strong>ak</strong> (исключение)</div>"
+        "title": "На согласную, в слове a/á/o/ó/u/ú",
+        "description": "asztal, barát, állat, ház...",
+        "hint": "Добавляется <strong>-ok</strong> (стандартно) или <strong>-ak</strong> (некоторые слова).<div class=\"example\">asztal → asztal<strong>ok</strong><br>barát → barát<strong>ok</strong><br>ház → ház<strong>ak</strong> (исключение)</div>"
       },
       {
         "value": "cons_front",
         "icon": "🟢",
-        "title": "На согласную (передние: e, é, i, í)",
-        "description": "Последний слог содержит e, é, i или í",
+        "title": "На согласную, в слове e/é/i/í",
+        "description": "szekrény, ember, szőnyeg...",
         "hint": "Добавляется <strong>-ek</strong>.<div class=\"example\">szekrény → szekrény<strong>ek</strong><br>ember → ember<strong>ek</strong></div>"
       },
       {
         "value": "cons_front_round",
         "icon": "🟣",
-        "title": "На согласную (передние: ö, ő, ü, ű)",
-        "description": "Последний слог содержит ö, ő, ü или ű",
-        "hint": "Добавляется <strong>-ök</strong>.<div class=\"example\">mérnök → mérnök<strong>ök</strong><br>függöny → függöny<strong>ök</strong><br>Исключения: könyv → könyv<strong>ek</strong></div>"
-      }
-    ]
-  },
-  {
-    "id": "step3_noun_acc_ending",
-    "label": "Окончание слова",
-    "title": "На что заканчивается существительное?",
-    "hint": "Суффикс винительного падежа -t добавляется по-разному в зависимости от последней буквы слова.",
-    "options": [
-      {
-        "value": "vowel",
-        "icon": "🔵",
-        "title": "На гласную",
-        "description": "Просто добавить -t",
-        "hint": "Суффикс <strong>-t</strong> добавляется напрямую. Если слово на <strong>-a/-e</strong>, они удлиняются.<div class=\"example\">virsli → virsli<strong>t</strong><br>sonka → sonká<strong>t</strong><br>körte → körté<strong>t</strong></div>"
-      },
-      {
-        "value": "special_cons",
-        "icon": "🟡",
-        "title": "На -l, -ly, -j, -n, -ny, -r, -s, -sz, -z",
-        "description": "Просто -t (но есть исключения!)",
-        "hint": "Обычно <strong>-t</strong> добавляется без соединительной гласной.<div class=\"example\">asztal → asztal<strong>t</strong><br>banán → banán<strong>t</strong></div><div class=\"example\"><strong>Исключения:</strong> tej → tej<strong>et</strong>, vaj → vaj<strong>at</strong>, méz → méz<strong>et</strong>, kenyér → kenyer<strong>et</strong>, madár → madar<strong>at</strong></div>"
-      },
-      {
-        "value": "other_cons",
-        "icon": "🔴",
-        "title": "На другую согласную",
-        "description": "Добавить соединительную гласную + t",
-        "hint": "Добавляется соединительная гласная по гармонии гласных + <strong>t</strong>.<div class=\"example\">bolt → bolt<strong>ot</strong> (задние)<br>zöldség → zöldség<strong>et</strong> (передние)<br>gyümölcs → gyümölcs<strong>öt</strong> (округлённые)</div>"
-      }
-    ]
-  },
-  {
-    "id": "step3_noun_loc_type",
-    "label": "Тип места",
-    "title": "Какое отношение к месту вы хотите выразить?",
-    "hint": "В венгерском три группы суффиксов местонахождения. Выбор зависит от типа места и контекста.",
-    "options": [
-      {
-        "value": "inside",
-        "icon": "🏠",
-        "title": "Внутри (-ban / -ben)",
-        "description": "В здании, стране, закрытом пространстве",
-        "hint": "Используется со зданиями, закрытыми местностями, странами и городами за пределами Венгрии.<div class=\"example\">A bolt<strong>ban</strong> vagyok. (Я в магазине)<br>Ausztriá<strong>ban</strong> lakom. (Я живу в Австрии)</div><div class=\"example\">Задние гласные → <strong>-ban</strong><br>Передние гласные → <strong>-ben</strong></div>"
-      },
-      {
-        "value": "surface",
-        "icon": "🏔️",
-        "title": "На поверхности (-on / -en / -ön)",
-        "description": "На открытом пространстве, событии, на поверхности",
-        "hint": "Используется для открытых пространств, событий, поверхностей, а также Венгрии и её городов.<div class=\"example\">A piac<strong>on</strong> vagyok. (Я на рынке)<br>Budapest<strong>en</strong> élek. (Я живу в Будапеште)<br>Magyarország<strong>on</strong> (В Венгрии)</div><div class=\"example\">Задние → <strong>-on</strong> | Передние e,é,i,í → <strong>-en</strong><br>Передние ö,ő,ü,ű → <strong>-ön</strong> | На гласную → <strong>-n</strong></div>"
-      },
-      {
-        "value": "near",
-        "icon": "🤝",
-        "title": "У / рядом (-nál / -nél)",
-        "description": "У кого-то, рядом с чем-то",
-        "hint": "Используется для обозначения нахождения у кого-то или рядом с чем-то.<div class=\"example\">Barátom<strong>nál</strong> vagyok. (Я у друга)<br>A ház<strong>nál</strong> állok. (Я стою у дома)</div><div class=\"example\">Задние гласные → <strong>-nál</strong><br>Передние гласные → <strong>-nél</strong></div>"
-      }
-    ]
-  },
-  {
-    "id": "step3_noun_poss_person",
-    "label": "Лицо",
-    "title": "Чья это вещь?",
-    "hint": "Притяжательные суффиксы зависят от лица владельца и от того, на что заканчивается слово.",
-    "options": [
-      {
-        "value": "first",
-        "icon": "1️⃣",
-        "title": "Моя (az én ...)",
-        "description": "Суффиксы: -m, -om, -am, -em, -öm",
-        "hint": "В 1-м лице суффикс <strong>-m</strong>. Если слово на согласную — добавляется соединительная гласная.<div class=\"example\">körte → körté<strong>m</strong> (моя груша)<br>asztal → asztal<strong>om</strong> (мой стол)<br>ház → ház<strong>am</strong> (мой дом)</div>"
-      },
-      {
-        "value": "second",
-        "icon": "2️⃣",
-        "title": "Твоя (a te ...)",
-        "description": "Суффиксы: -d, -od, -ad, -ed, -öd",
-        "hint": "Во 2-м лице суффикс <strong>-d</strong>. Если слово на согласную — добавляется соединительная гласная.<div class=\"example\">alma → almá<strong>d</strong> (твоё яблоко)<br>asztal → asztal<strong>od</strong> (твой стол)<br>gyerek → gyerek<strong>ed</strong> (твой ребёнок)</div>"
-      },
-      {
-        "value": "third",
-        "icon": "3️⃣",
-        "title": "Его / Её (az ő ...)",
-        "description": "Суффиксы: -a, -e, -ja, -je",
-        "hint": "В 3-м лице: <strong>-ja/-je</strong> после гласных и некоторых согласных, <strong>-a/-e</strong> после других. После <em>-s, -sz, -z, -zs, -c, -cs, -gy, -ny, -ty, -ly, -j</em> — без j.<div class=\"example\">autó → autó<strong>ja</strong> (его машина)<br>asztal → asztal<strong>a</strong> (его стол)<br>kert → kert<strong>je</strong> (его сад)</div><div class=\"example\"><strong>Порядок слов:</strong> владелец + вещь<br>Anna asztal<strong>a</strong> (стол Анны)</div>"
+        "title": "На согласную, в слове ö/ő/ü/ű",
+        "description": "mérnök, függöny, török...",
+        "hint": "Добавляется <strong>-ök</strong> (но есть исключения: könyv → könyv<strong>ek</strong>).<div class=\"example\">mérnök → mérnök<strong>ök</strong><br>függöny → függöny<strong>ök</strong></div>"
       }
     ]
   },
@@ -271,28 +249,28 @@
     "id": "step3_adj_ending",
     "label": "Окончание",
     "title": "На что заканчивается прилагательное?",
-    "hint": "Правила образования множественного числа прилагательных отличаются от существительных — для задних гласных стандартное окончание -ak (не -ok!).",
+    "hint": "Важно: прилагательные с задними гласными берут окончание <strong>-ak</strong> (не -ok, как существительные!).",
     "options": [
       {
         "value": "vowel_short",
         "icon": "🔵",
         "title": "На -a или -e",
-        "description": "Удлиняются в -á / -é",
-        "hint": "Как и у существительных: <strong>-a → -ák</strong>, <strong>-e → -ék</strong>.<div class=\"example\">laza → laz<strong>ák</strong> (свободные)<br>enyhe → enyh<strong>ék</strong> (мягкие)</div>"
+        "description": "laza, drága, enyhe...",
+        "hint": "Удлиняются: <strong>-a → -ák</strong>, <strong>-e → -ék</strong>.<div class=\"example\">laza → laz<strong>ák</strong> (свободные)<br>enyhe → enyh<strong>ék</strong> (мягкие)</div>"
       },
       {
         "value": "vowel_long",
         "icon": "🟡",
         "title": "На -ú, -ű или -i",
-        "description": "Добавляется -ak / -ek",
-        "hint": "Добавляется <strong>-ak</strong> (задние) или <strong>-ek</strong> (передние).<div class=\"example\">hosszú → hosszú<strong>ak</strong> (длинные)<br>könnyű → könnyű<strong>ek</strong> (лёгкие)<br>nyugati → nyugati<strong>ak</strong> (западные)</div>"
+        "description": "hosszú, könnyű, nyugati...",
+        "hint": "Добавляется <strong>-ak</strong> (задние) или <strong>-ek</strong> (передние).<div class=\"example\">hosszú → hosszú<strong>ak</strong><br>könnyű → könnyű<strong>ek</strong><br>nyugati → nyugati<strong>ak</strong></div>"
       },
       {
         "value": "consonant",
         "icon": "🔴",
         "title": "На согласную",
-        "description": "Стандарт для задних: -ak (не -ok!)",
-        "hint": "Передние гласные → <strong>-ek</strong>. Задние гласные → обычно <strong>-ak</strong> (не -ok как у сущ-х!).<div class=\"example\">szép → szép<strong>ek</strong> | magas → magas<strong>ak</strong> | rossz → rossz<strong>ak</strong></div><div class=\"example\"><strong>Исключения с -ok:</strong> nagy → nagy<strong>ok</strong>, vastag → vastag<strong>ok</strong>, boldog → boldog<strong>ok</strong></div>"
+        "description": "szép, magas, nagy, rossz...",
+        "hint": "Передние → <strong>-ek</strong>. Задние → <strong>-ak</strong> (не -ok!). Исключения: nagy<strong>ok</strong>, vastag<strong>ok</strong>, boldog<strong>ok</strong>.<div class=\"example\">szép → szép<strong>ek</strong><br>magas → magas<strong>ak</strong><br>nagy → nagy<strong>ok</strong> (искл.)</div>"
       }
     ]
   }
